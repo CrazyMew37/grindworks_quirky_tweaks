@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/clown_boss.ogg-cf81d765dc8b1d5a55187149e173b0
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
