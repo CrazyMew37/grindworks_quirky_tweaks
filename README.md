@@ -15,3 +15,6 @@ Find the Fairway Fiend to be too fast or too hard? Then this mod is for you! Thi
 
 ## Nightlife Soundpack
 This replaces the game's soundtrack with Toontown Nightlife, the content pack. This is intended to be paired with moose's texture pack, at least until they add music themselves.
+
+## Faster Luck Boost
+Hate the Play Dead animation? Then replace it with this new animation where the Doodle magically phases through the floor and pops right out of solid ground! It's now much faster than 15 seconds of drama! May or may not be valid for speedruns.
