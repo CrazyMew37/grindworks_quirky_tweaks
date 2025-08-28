@@ -18,3 +18,6 @@ This replaces the game's soundtrack with Toontown Nightlife, the content pack. T
 
 ## Faster Luck Boost
 Hate the Play Dead animation? Then replace it with this new animation where the Doodle magically phases through the floor and pops right out of solid ground! It's now much faster than 15 seconds of drama! May or may not be valid for speedruns.
+
+## Yellow Mole Destroyer
+Hate how the Yellow Moles keep launching you and bouncing you around like a tennis ball? Well, take your revenge with this mod that lets you stomp on the yellow moles! They now count in the mole game, so some adjustments were made accordingly. Mole games are now quintupled in required moles (This includes Fairway Fiend), and red moles are now worth 2 moles.
