@@ -22,13 +22,15 @@
 			"incompatibilities": [
 				"CrazyMew37-NerfedFairwayFiend"
 			],
-			"load_before": [],
+			"load_before": [
+				"CrazyMew37-EndlessMode"
+			],
 			"optional_dependencies": [],
 			"tags": []
 		}
 	},
 	"name": "YellowMoleDestroyer",
 	"namespace": "CrazyMew37",
-	"version_number": "1.1.1",
+	"version_number": "1.1.2",
 	"website_url": "https://github.com/exampleauthor/examplemod"
 }

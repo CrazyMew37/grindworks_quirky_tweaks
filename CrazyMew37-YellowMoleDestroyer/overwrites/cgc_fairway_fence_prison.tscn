@@ -405,5 +405,8 @@ grid_size = Vector2i(3, 3)
 launch_cam = NodePath("../LaunchCam")
 
 [connection signal="body_entered" from="Navigation/Props/desk/Cog/BrushOff" to="Navigation/Props/desk/Cog" method="_on_brush_off_body_entered"]
+[connection signal="s_endless_hit" from="MoleStompGame" to="Navigation/Props/desk/Cog" method="_on_mole_stomp_game_failed"]
+[connection signal="s_endless_hit" from="MoleStompGame" to="treasure_chest" method="vanish"]
+[connection signal="s_endless_hit" from="MoleStompGame" to="treasure_chest2" method="vanish"]
 [connection signal="s_opened" from="treasure_chest" to="MoleStompGame" method="stop_and_disable_moles"]
 [connection signal="s_opened" from="treasure_chest2" to="MoleStompGame" method="stop_and_disable_moles"]
