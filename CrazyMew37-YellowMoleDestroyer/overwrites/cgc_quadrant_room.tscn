@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bln8k5hdfnymx" path="res://objects/props/cgc/resizeable_wall.tscn" id="1_6dhs0"]
 [ext_resource type="PackedScene" uid="uid://cwldqwunkk4ar" path="res://objects/props/cgc/resizeable_ground.tscn" id="2_2pc0q"]
-[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="3_1pygc"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://mole_stomp.gd" id="3_1pygc"]
 [ext_resource type="PackedScene" uid="uid://b3p8q3fhmuo35" path="res://objects/props/cgc/resizeable_hedge_cube.tscn" id="4_cykn1"]
 [ext_resource type="Script" uid="uid://c1ip615wqfun" path="res://objects/modules/cgc/variants/cgc_multi_mole_manager.gd" id="5_jr7he"]
 [ext_resource type="PackedScene" uid="uid://dmv7dbgr2b2nr" path="res://objects/obstacles/lava_floor/lava_floor.tscn" id="6_y5dgc"]
@@ -199,7 +199,7 @@ script = ExtResource("5_jr7he")
 quota = 30
 mole_popup_time_range = Vector2(2.5, 5.5)
 game_time = 75.0
-mole_games = [null, null, null, null]
+mole_games = [NodePath("../Navigation/Quadrant1/MoleStompGame"), NodePath("../Navigation/Quadrant2/MoleStompGame"), NodePath("../Navigation/Quadrant3/MoleStompGame"), NodePath("../Navigation/Quadrant4/MoleStompGame")]
 door = NodePath("../CogDoor")
 
 [node name="GameStartColl" type="Area3D" parent="MoleBossManager"]
