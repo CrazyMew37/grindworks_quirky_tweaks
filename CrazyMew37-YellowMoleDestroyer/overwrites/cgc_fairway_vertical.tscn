@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dy4u5p0105y5k" path="res://objects/props/cgc/fence_low_collision.tscn" id="11_7p0hx"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="12_o15nk"]
 [ext_resource type="Script" uid="uid://dcfscnknknhi6" path="res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/secret_mole_stomp.gd" id="13_bri8v"]
-[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="13_udmje"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://mole_stomp.gd" id="13_udmje"]
 [ext_resource type="Texture2D" uid="uid://csmkpukc6maca" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="14_giorc"]
 [ext_resource type="PackedScene" uid="uid://c6bqbu1bxlh3l" path="res://objects/props/cgc/resizeable_wall_plane.tscn" id="15_a26em"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="16_cub5t"]

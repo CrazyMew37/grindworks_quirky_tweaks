@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dn6p7pcjhawfb" path="res://objects/props/office/chair.tscn" id="14_pdamv"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="15_rouvg"]
 [ext_resource type="Script" uid="uid://cuc2bqks4qias" path="res://objects/modules/cgc/variants/armchair_manager_logic.gd" id="16_e1p1x"]
-[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="17_i4103"]
+[ext_resource type="Resource" uid="uid://cm5r6l5idf6rw" path="res://objects/cog/presets/misc/armchair_manager.tres" id="17_3ivfy"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="18_16ue4"]
 [ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="19_rxvs4"]
 [ext_resource type="PackedScene" uid="uid://bqvkntyk0ljsq" path="res://objects/goon/goon.tscn" id="20_elumg"]
@@ -285,7 +285,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.0287375, 0, -0.73829
 script = ExtResource("16_e1p1x")
 level = 20
 custom_level_range = Vector2i(20, 20)
-pool = null
+dna = ExtResource("17_3ivfy")
 skelecog_chance = 0
 
 [node name="BrushOff" type="Area3D" parent="Navigation/Props/desk/Cog" index="3"]
@@ -303,7 +303,7 @@ visible = false
 
 [node name="MoleStompGame" type="Area3D" parent="." index="29"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30.421, 0, 21.2164)
-script = ExtResource("17_i4103")
+script = ExtResource("24_3ivfy")
 game_mode = 1
 want_launch = false
 difficulty = 6.0
