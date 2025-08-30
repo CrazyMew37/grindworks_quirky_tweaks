@@ -41,6 +41,8 @@ func install_script_hook_files() -> void:
 	extensions_dir_path = mod_dir_path.path_join("extensions")
 	ModLoaderMod.install_script_hooks("res://objects/interactables/mole_stomp/mole_hole.gd", extensions_dir_path.path_join("objects/interactables/mole_stomp/mole_hole.hooks.gd"))
 	ModLoaderMod.install_script_hooks("res://objects/modules/cgc/variants/cgc_fairway_parkour_boss.gd", extensions_dir_path.path_join("objects/modules/cgc/variants/cgc_fairway_parkour_boss.hooks.gd"))
+	ModLoaderMod.install_script_hooks("res://objects/modules/cgc/variants/cgc_multi_mole_manager.gd", extensions_dir_path.path_join("objects/modules/cgc/variants/cgc_multi_mole_manager.hooks.gd"))
+	ModLoaderMod.install_script_hooks("res://objects/interactables/mole_stomp/mole_stomp.gd", extensions_dir_path.path_join("objects/interactables/mole_stomp/mole_stomp.hooks.gd"))
 
 
 
