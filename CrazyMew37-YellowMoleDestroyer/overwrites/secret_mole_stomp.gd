@@ -7,7 +7,7 @@ signal s_game_win
 
 ## Constants
 const WAIT_TIME := Vector2(0.25,1.0)
-var MOLE_SCENE := preload('res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/mole_hole_alt.tscn')
+var MOLE_SCENE := load('res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/mole_hole_alt.tscn')
 const UI_SCENE := preload('res://objects/interactables/mole_stomp/mole_display.tscn')
 const MG_LOSE = preload("res://audio/sfx/misc/MG_lose.ogg")
 
@@ -91,7 +91,7 @@ func fill_grid() -> void:
 	for i in grid_size.x:
 		grid.append([])
 		for j in grid_size.y:
-			var mole: MoleHoleAlt = MOLE_SCENE.instantiate()
+			var mole = MOLE_SCENE.instantiate()
 			if game_mode in [GameMode.ENDLESS, GameMode.MANAGED]:
 				mole.want_cog_moles = false
 			mole.want_launch = want_launch
@@ -116,7 +116,7 @@ func update_ui() -> void:
 	if mole_ui:
 		mole_ui.get_child(0).set_text('Moles Left: ' + str(quota - moles_stomped))
 
-func get_random_mole() -> MoleHoleAlt:
+func get_random_mole():
 	var row: Array = grid[RandomService.randi_channel('moles') % grid.size()]
 	return row[RandomService.randi_channel('moles') % row.size()]
 
@@ -157,11 +157,11 @@ func end_game() -> void:
 func disable_moles() -> void:
 	for i in grid.size():
 		for j in grid[i].size():
-			var mole: MoleHoleAlt = grid[i][j]
+			var mole = grid[i][j]
 			mole.disable()
 
-func get_all_moles() -> Array[MoleHoleAlt]:
-	var all_moles: Array[MoleHoleAlt] = []
+func get_all_moles():
+	var all_moles = []
 	for i in grid.size():
 		for j in grid[i].size():
 			all_moles.append(grid[i][j])

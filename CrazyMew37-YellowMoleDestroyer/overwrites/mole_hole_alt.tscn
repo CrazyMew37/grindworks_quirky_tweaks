@@ -11,7 +11,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_xop78"]
 size = Vector3(0.798584, 0.747314, 1)
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dmrk4"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_81txf"]
 resource_local_to_scene = true
 emission_shape = 1
 emission_sphere_radius = 0.05
@@ -52,7 +52,7 @@ unique_name_in_owner = true
 emitting = false
 amount = 30
 visibility_aabb = AABB(-6.29677, -1.869, -6.49009, 11.4551, 6.14176, 11.3803)
-process_material = SubResource("ParticleProcessMaterial_dmrk4")
+process_material = SubResource("ParticleProcessMaterial_81txf")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="body_entered"]
 [connection signal="body_exited" from="PlayerDetection" to="." method="body_exited"]
