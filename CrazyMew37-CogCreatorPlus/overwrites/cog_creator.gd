@@ -31,6 +31,7 @@ func _prepare_menus() -> void:
 	_ready_body()
 	_ready_head_mod()
 	_ready_head_tex()
+	_ready_import_cog_suit_textures()
 	_ready_blazer_tex()
 	_ready_sleeve_tex()
 	_ready_leg_tex()
