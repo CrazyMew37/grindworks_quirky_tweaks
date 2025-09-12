@@ -21,3 +21,6 @@ Hate the Play Dead animation? Then replace it with this new animation where the 
 
 ## Yellow Mole Destroyer
 Hate how the Yellow Moles keep launching you and bouncing you around like a tennis ball? Well, take your revenge with this mod that lets you stomp on the yellow moles! They now count in the mole game, so some adjustments were made accordingly. Mole games are now quintupled in required moles (This includes Fairway Fiend), and red moles are now worth 2 moles.
+
+## Cog Creator Plus
+This mod adds some extra utilities and uses for the Cog Creator, adding stuff like head positions, extended scales, an overhauled suit menu, and more. All cogs made with this mod should be vanilla compatible.
