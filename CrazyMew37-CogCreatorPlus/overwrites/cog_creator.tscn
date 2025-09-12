@@ -401,9 +401,9 @@ dna = ExtResource("203_5f7rw")
 skelecog_chance = 0
 
 [node name="Camera3D" type="Camera3D" parent="World3D"]
-transform = Transform3D(-1, 1.52574e-09, -8.74095e-08, 0, 0.999848, 0.0174524, 8.74228e-08, 0.0174524, -0.999848, 0, 2.355, 0)
+transform = Transform3D(-1, 1.52574e-09, -8.74095e-08, 0, 0.999848, 0.0174524, 8.74228e-08, 0.0174524, -0.999848, 0, 3, 0)
 projection = 1
-size = 4.765
+size = 6.0
 
 [node name="Root Scene" parent="World3D" instance=ExtResource("204_co7rr")]
 
