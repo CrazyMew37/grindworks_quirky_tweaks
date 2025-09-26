@@ -7,7 +7,7 @@ func mole_hit(chain: ModLoaderHookChain) -> void:
 		chain.reference_object.win_game()
 	else:
 		if chain.reference_object.game_timer:
-			chain.reference_object.set_timer_to_time(chain.reference_object.game_timer.timer.time_left + 3)
+			chain.reference_object.set_timer_to_time(chain.reference_object.game_timer.timer.time_left + 2)
 		else:
 			chain.reference_object.set_timer_to_time(chain.reference_object.GameTimeBase)
 

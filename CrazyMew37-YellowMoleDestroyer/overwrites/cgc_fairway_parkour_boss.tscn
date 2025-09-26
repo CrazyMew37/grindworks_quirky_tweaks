@@ -441,50 +441,50 @@ unique_name_in_owner = true
 transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 8.58065, 0, -4.52314)
 script = ExtResource("11_63u3g")
 game_mode = 2
-force_launch_node = NodePath("../../MoleLaunchPos2")
 grid_size = Vector2i(2, 2)
-launch_cam = NodePath("../../MoleLaunchCamera")
 hole_separation = 2.5
+force_launch_node = NodePath("../../MoleLaunchPos2")
+launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="Game2" type="Area3D" parent="MoleBossManager/MoleGames" index="1" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -12.125, 0, -4.42684)
 script = ExtResource("11_63u3g")
 game_mode = 2
-force_launch_node = NodePath("../../MoleLaunchPos")
 grid_size = Vector2i(2, 2)
-launch_cam = NodePath("../../MoleLaunchCamera")
 hole_separation = 2.5
+force_launch_node = NodePath("../../MoleLaunchPos")
+launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="Game3" type="Area3D" parent="MoleBossManager/MoleGames" index="2" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -16.0006, 0, -20.0431)
 script = ExtResource("11_63u3g")
 game_mode = 2
-force_launch_node = NodePath("../../MoleLaunchPos")
 grid_size = Vector2i(1, 1)
+force_launch_node = NodePath("../../MoleLaunchPos")
 launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="Game6" type="Area3D" parent="MoleBossManager/MoleGames" index="3" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(-3, 0, 4.52987e-07, 0, 3, 0, -4.52987e-07, 0, -3, -15.7528, 0, 18.5432)
 script = ExtResource("11_63u3g")
 game_mode = 2
-force_launch_node = NodePath("../../MoleLaunchPos")
 grid_size = Vector2i(1, 1)
+force_launch_node = NodePath("../../MoleLaunchPos")
 launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="Game4" type="Area3D" parent="MoleBossManager/MoleGames" index="4" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.02508, 0, -20.9368)
 script = ExtResource("11_63u3g")
 game_mode = 2
-force_launch_node = NodePath("../../MoleLaunchPos2")
 grid_size = Vector2i(1, 1)
+force_launch_node = NodePath("../../MoleLaunchPos2")
 launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="Game5" type="Area3D" parent="MoleBossManager/MoleGames" index="5" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(-3, 0, -4.52987e-07, 0, 3, 0, 4.52987e-07, 0, -3, 5.18134, 0, 19.273)
 script = ExtResource("11_63u3g")
 game_mode = 2
-force_launch_node = NodePath("../../MoleLaunchPos2")
 grid_size = Vector2i(1, 1)
+force_launch_node = NodePath("../../MoleLaunchPos2")
 launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="MoleUI" type="Control" parent="MoleBossManager" index="1"]
