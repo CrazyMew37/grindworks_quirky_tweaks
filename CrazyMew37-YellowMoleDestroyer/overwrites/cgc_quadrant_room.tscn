@@ -199,7 +199,7 @@ script = ExtResource("5_jr7he")
 quota = 30
 mole_popup_time_range = Vector2(2.5, 5.5)
 game_time = 45.0
-mole_games = [null, null, null, null]
+mole_games = [NodePath("../Navigation/Quadrant1/MoleStompGame"), NodePath("../Navigation/Quadrant2/MoleStompGame"), NodePath("../Navigation/Quadrant3/MoleStompGame"), NodePath("../Navigation/Quadrant4/MoleStompGame")]
 door = NodePath("../CogDoor")
 
 [node name="GameStartColl" type="Area3D" parent="MoleBossManager"]

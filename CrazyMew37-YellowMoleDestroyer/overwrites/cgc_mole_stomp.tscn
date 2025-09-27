@@ -36,5 +36,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.189, 0, 0)
 
 [node name="Chest2" type="Node3D" parent="SignalChests" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.539, 0, 0)
-
-[connection signal="s_game_win" from="MoleStomp" to="SignalChests" method="spawn_chests"]

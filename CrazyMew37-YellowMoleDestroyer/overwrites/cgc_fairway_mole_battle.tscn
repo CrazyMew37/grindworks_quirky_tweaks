@@ -213,5 +213,3 @@ transform = Transform3D(-1.965, 0, 2.43035e-07, 0, 3.045, 0, -1.71786e-07, 0, -2
 
 [node name="treasure_chest" parent="." index="35" instance=ExtResource("11_ed7jh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.7097, 0, 0)
-
-[connection signal="s_normal_finished" from="MoleStompGame" to="Props/FenceGate" method="open"]
