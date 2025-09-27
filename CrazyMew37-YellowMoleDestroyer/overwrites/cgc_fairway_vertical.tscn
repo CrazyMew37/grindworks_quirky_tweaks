@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://dy4u5p0105y5k" path="res://objects/props/cgc/fence_low_collision.tscn" id="11_7p0hx"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="12_o15nk"]
 [ext_resource type="Script" uid="uid://dcfscnknknhi6" path="res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/secret_mole_stomp.gd" id="13_bri8v"]
-[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://mole_stomp.gd" id="13_udmje"]
 [ext_resource type="Texture2D" uid="uid://csmkpukc6maca" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="14_giorc"]
 [ext_resource type="PackedScene" uid="uid://c6bqbu1bxlh3l" path="res://objects/props/cgc/resizeable_wall_plane.tscn" id="15_a26em"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="16_cub5t"]
@@ -21,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="18_pfums"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="19_2tkpb"]
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="20_old73"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="21_bri8v"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lemun"]
 _surfaces = [{
@@ -1225,7 +1225,7 @@ transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 
 
 [node name="MoleStompGame" type="Area3D" parent="UpperPlatformLeft" index="6"]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 18.8391, 11.443, -21.1119)
-script = ExtResource("13_udmje")
+script = ExtResource("21_bri8v")
 game_mode = 1
 endless_stop_moles = false
 want_launch = false
@@ -1255,8 +1255,8 @@ transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 
 
 [node name="MoleStompGame2" type="Area3D" parent="UpperPlatformRight" index="6"]
 transform = Transform3D(-1.8, 0, -1.57361e-07, 0, 1.8, 0, 1.57361e-07, 0, -1.8, 27.9393, 11.443, -6.85052)
-script = ExtResource("13_udmje")
-game_mode = 1
+script = ExtResource("21_bri8v")
+game_mode = 2
 endless_stop_moles = false
 want_launch = false
 grid_size = Vector2i(4, 3)

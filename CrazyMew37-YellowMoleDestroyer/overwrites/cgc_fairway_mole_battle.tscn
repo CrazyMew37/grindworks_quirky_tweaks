@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="4_gm5i5"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="5_36ica"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="6_5sv28"]
-[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://mole_stomp.gd" id="7_efrxm"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="7_aomfr"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="8_kw7g8"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="9_qep7b"]
 [ext_resource type="PackedScene" uid="uid://dcovg7c53hvck" path="res://objects/props/cgc/cgc_flat_branch.tscn" id="10_puqt1"]
@@ -137,14 +137,13 @@ transform = Transform3D(1.15, 0, 0, 0, 1.15, 0, 0, 0, 1.15, 30.138, 0, 20.9233)
 [node name="HedgePillar3" parent="Props" index="6" instance=ExtResource("6_5sv28")]
 transform = Transform3D(1.15, 0, 0, 0, 1.15, 0, 0, 0, 1.15, 29.2044, 0, -25.7001)
 
-[node name="MoleStompGame" type="Area3D" parent="." index="30" node_paths=PackedStringArray("launch_cam")]
+[node name="MoleStompGame" type="Area3D" parent="." index="30"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -17.0677, 0, -13.5613)
-script = ExtResource("7_efrxm")
+script = ExtResource("7_aomfr")
 difficulty = 1.4
 grid_size = Vector2i(10, 5)
 game_time = 50.0
 quota = 40
-launch_cam = NodePath("../LaunchCam")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MoleStompGame" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4617, 4.34521, 15.1786)
@@ -213,3 +212,5 @@ transform = Transform3D(-1.965, 0, 2.43035e-07, 0, 3.045, 0, -1.71786e-07, 0, -2
 
 [node name="treasure_chest" parent="." index="35" instance=ExtResource("11_ed7jh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.7097, 0, 0)
+
+[connection signal="s_normal_finished" from="MoleStompGame" to="Props/FenceGate" method="open"]

@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cjd18xmoljlbm" path="res://models/facilities/cgc/textures/WallBricksBig2.png" id="8_ytsif"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="9_ta5jd"]
 [ext_resource type="Script" uid="uid://o33kwwl3xjcg" path="res://objects/modules/cgc/variants/cgc_fairway_parkour_boss.gd" id="10_6xswq"]
-[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://mole_stomp.gd" id="11_63u3g"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="11_kptco"]
 [ext_resource type="PackedScene" uid="uid://bwnrw7jcf01kq" path="res://objects/general_ui/node_viewer/node_viewer.tscn" id="12_h6ps1"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="13_c15e5"]
 [ext_resource type="AudioStream" uid="uid://neyk2d1b3k4i" path="res://audio/sfx/objects/moles/Mole_Stomp.ogg" id="14_1eetv"]
@@ -437,55 +437,43 @@ mole_popup_time_range = Vector2(4, 8)
 [node name="MoleGames" type="Node3D" parent="MoleBossManager" index="0"]
 unique_name_in_owner = true
 
-[node name="Game1" type="Area3D" parent="MoleBossManager/MoleGames" index="0" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
+[node name="Game1" type="Area3D" parent="MoleBossManager/MoleGames" index="0"]
 transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 8.58065, 0, -4.52314)
-script = ExtResource("11_63u3g")
+script = ExtResource("11_kptco")
 game_mode = 2
 grid_size = Vector2i(2, 2)
 hole_separation = 2.5
-force_launch_node = NodePath("../../MoleLaunchPos2")
-launch_cam = NodePath("../../MoleLaunchCamera")
 
-[node name="Game2" type="Area3D" parent="MoleBossManager/MoleGames" index="1" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
+[node name="Game2" type="Area3D" parent="MoleBossManager/MoleGames" index="1"]
 transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -12.125, 0, -4.42684)
-script = ExtResource("11_63u3g")
+script = ExtResource("11_kptco")
 game_mode = 2
 grid_size = Vector2i(2, 2)
 hole_separation = 2.5
-force_launch_node = NodePath("../../MoleLaunchPos")
-launch_cam = NodePath("../../MoleLaunchCamera")
 
-[node name="Game3" type="Area3D" parent="MoleBossManager/MoleGames" index="2" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
+[node name="Game3" type="Area3D" parent="MoleBossManager/MoleGames" index="2"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -16.0006, 0, -20.0431)
-script = ExtResource("11_63u3g")
+script = ExtResource("11_kptco")
 game_mode = 2
 grid_size = Vector2i(1, 1)
-force_launch_node = NodePath("../../MoleLaunchPos")
-launch_cam = NodePath("../../MoleLaunchCamera")
 
-[node name="Game6" type="Area3D" parent="MoleBossManager/MoleGames" index="3" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
+[node name="Game6" type="Area3D" parent="MoleBossManager/MoleGames" index="3"]
 transform = Transform3D(-3, 0, 4.52987e-07, 0, 3, 0, -4.52987e-07, 0, -3, -15.7528, 0, 18.5432)
-script = ExtResource("11_63u3g")
+script = ExtResource("11_kptco")
 game_mode = 2
 grid_size = Vector2i(1, 1)
-force_launch_node = NodePath("../../MoleLaunchPos")
-launch_cam = NodePath("../../MoleLaunchCamera")
 
-[node name="Game4" type="Area3D" parent="MoleBossManager/MoleGames" index="4" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
+[node name="Game4" type="Area3D" parent="MoleBossManager/MoleGames" index="4"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.02508, 0, -20.9368)
-script = ExtResource("11_63u3g")
+script = ExtResource("11_kptco")
 game_mode = 2
 grid_size = Vector2i(1, 1)
-force_launch_node = NodePath("../../MoleLaunchPos2")
-launch_cam = NodePath("../../MoleLaunchCamera")
 
-[node name="Game5" type="Area3D" parent="MoleBossManager/MoleGames" index="5" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
+[node name="Game5" type="Area3D" parent="MoleBossManager/MoleGames" index="5"]
 transform = Transform3D(-3, 0, -4.52987e-07, 0, 3, 0, 4.52987e-07, 0, -3, 5.18134, 0, 19.273)
-script = ExtResource("11_63u3g")
+script = ExtResource("11_kptco")
 game_mode = 2
 grid_size = Vector2i(1, 1)
-force_launch_node = NodePath("../../MoleLaunchPos2")
-launch_cam = NodePath("../../MoleLaunchCamera")
 
 [node name="MoleUI" type="Control" parent="MoleBossManager" index="1"]
 unique_name_in_owner = true
