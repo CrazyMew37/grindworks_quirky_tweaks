@@ -27,6 +27,7 @@ enum GameMode { NORMAL, ENDLESS, MANAGED }
 @export var base_damage := -10
 @export var launch_cam: Camera3D
 @export var hole_separation: float = 3.0
+@export var normal_mole_cog_boost_time: float = 0.0
 
 ## Locals
 var grid := []
@@ -79,7 +80,7 @@ func start_game() -> void:
 		game_timer.timer.timeout.connect(lose_game)
 
 func reset_timer() -> void:
-	timer.wait_time = RandomService.randf_range_channel('moles', WAIT_TIME.x / difficulty, WAIT_TIME.y / difficulty)
+	timer.wait_time = RNG.channel(RNG.ChannelMoles).randf_range(WAIT_TIME.x / difficulty, WAIT_TIME.y / difficulty)
 	timer.start()
 
 func on_timeout() -> void:
@@ -94,6 +95,8 @@ func fill_grid() -> void:
 			var mole = MOLE_SCENE.instantiate()
 			if game_mode in [GameMode.ENDLESS, GameMode.MANAGED]:
 				mole.want_cog_moles = false
+			if game_mode == GameMode.NORMAL:
+				mole.mole_cog_boost_time = normal_mole_cog_boost_time
 			mole.want_launch = want_launch
 			if force_launch_node:
 				mole.force_launch_node = force_launch_node
@@ -117,8 +120,8 @@ func update_ui() -> void:
 		mole_ui.get_child(0).set_text('Moles Left: ' + str(quota - moles_stomped))
 
 func get_random_mole():
-	var row: Array = grid[RandomService.randi_channel('moles') % grid.size()]
-	return row[RandomService.randi_channel('moles') % row.size()]
+	var row: Array = grid[RNG.channel(RNG.ChannelMoles).randi() % grid.size()]
+	return row[RNG.channel(RNG.ChannelMoles).randi() % row.size()]
 
 func win_game() -> void:
 	if game_mode == GameMode.ENDLESS:
@@ -136,7 +139,7 @@ func lose_game() -> void:
 
 	if Util.get_player():
 		Util.get_player().last_damage_source = "some Moles"
-		Util.get_player().quick_heal(damage)
+		Util.get_player().quick_heal(Util.get_hazard_damage(base_damage))
 		AudioManager.play_sound(Util.get_player().toon.yelp)
 	end_game()
 

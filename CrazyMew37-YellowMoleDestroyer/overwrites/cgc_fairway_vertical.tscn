@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=4 uid="uid://bje0xky6hvjo4"]
+[gd_scene load_steps=54 format=4 uid="uid://yy5lj2fdpvw7"]
 
 [ext_resource type="PackedScene" uid="uid://ch3xs1d1lu117" path="res://objects/modules/cgc/base_rooms/golfcourse_fairway.tscn" id="1_ic0na"]
 [ext_resource type="Material" uid="uid://b45hb25eo5q6v" path="res://models/facilities/cgc/materials/tree_mat.tres" id="2_bri8v"]
@@ -53,6 +53,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lemun")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_crsqn"]
+size = Vector3(63.701, 20.66882, 50.4635)
 
 [sub_resource type="QuadMesh" id="QuadMesh_p8xyp"]
 resource_local_to_scene = true
@@ -577,7 +580,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -893.357, 195.334, 525.526)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1466.34, 466.419, -4.728)
 
 [node name="CollisionShape3D" parent="RoomArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04329, 11.4776, 1.30658)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04329, 10.260962, 1.30658)
+shape = SubResource("BoxShape3D_crsqn")
 
 [node name="ENTRANCE" parent="." index="26"]
 transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-10, -31.3482, 0, -0.0306853)
@@ -1256,7 +1260,7 @@ transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 
 [node name="MoleStompGame2" type="Area3D" parent="UpperPlatformRight" index="6"]
 transform = Transform3D(-1.8, 0, -1.57361e-07, 0, 1.8, 0, 1.57361e-07, 0, -1.8, 27.9393, 11.443, -6.85052)
 script = ExtResource("21_bri8v")
-game_mode = 2
+game_mode = 1
 endless_stop_moles = false
 want_launch = false
 grid_size = Vector2i(4, 3)

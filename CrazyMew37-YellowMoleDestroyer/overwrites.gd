@@ -13,3 +13,5 @@ func _init():
 	overwrite_fence_prison.take_over_path("res://objects/modules/cgc/variants/cgc_fairway_fence_prison.tscn")
 	var overwrite_vertical_room = preload("res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/cgc_fairway_vertical.tscn")
 	overwrite_vertical_room.take_over_path("res://objects/modules/cgc/variants/cgc_fairway_vertical.tscn")
+	var overwrite_sand_moles = preload("res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/cgc_long_room_moles.tscn")
+	overwrite_sand_moles.take_over_path("res://objects/modules/cgc/variants/cgc_long_room_moles.tscn")

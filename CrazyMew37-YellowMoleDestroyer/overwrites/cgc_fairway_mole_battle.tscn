@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ccfrm657huhw"]
+[gd_scene load_steps=15 format=3 uid="uid://bxcdh5urgm7lu"]
 
 [ext_resource type="PackedScene" uid="uid://ch3xs1d1lu117" path="res://objects/modules/cgc/base_rooms/golfcourse_fairway.tscn" id="1_aomfr"]
 [ext_resource type="PackedScene" uid="uid://b3p8q3fhmuo35" path="res://objects/props/cgc/resizeable_hedge_cube.tscn" id="2_y4slk"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="9_qep7b"]
 [ext_resource type="PackedScene" uid="uid://dcovg7c53hvck" path="res://objects/props/cgc/cgc_flat_branch.tscn" id="10_puqt1"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="11_ed7jh"]
+[ext_resource type="Script" uid="uid://cxnd2ovpbxl8i" path="res://objects/misc/prank_charger.gd" id="12_y4slk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1wtw3"]
 size = Vector3(8.71588, 9.69043, 3.41797)
@@ -137,13 +138,14 @@ transform = Transform3D(1.15, 0, 0, 0, 1.15, 0, 0, 0, 1.15, 30.138, 0, 20.9233)
 [node name="HedgePillar3" parent="Props" index="6" instance=ExtResource("6_5sv28")]
 transform = Transform3D(1.15, 0, 0, 0, 1.15, 0, 0, 0, 1.15, 29.2044, 0, -25.7001)
 
-[node name="MoleStompGame" type="Area3D" parent="." index="30"]
+[node name="MoleStompGame" type="Area3D" parent="." index="30" node_paths=PackedStringArray("launch_cam")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -17.0677, 0, -13.5613)
 script = ExtResource("7_aomfr")
 difficulty = 1.4
 grid_size = Vector2i(10, 5)
 game_time = 50.0
 quota = 40
+launch_cam = NodePath("../LaunchCam")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MoleStompGame" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4617, 4.34521, 15.1786)
@@ -212,5 +214,12 @@ transform = Transform3D(-1.965, 0, 2.43035e-07, 0, 3.045, 0, -1.71786e-07, 0, -2
 
 [node name="treasure_chest" parent="." index="35" instance=ExtResource("11_ed7jh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.7097, 0, 0)
+
+[node name="PrankCharger" type="Node" parent="." index="36" node_paths=PackedStringArray("signals")]
+script = ExtResource("12_y4slk")
+signals = {
+NodePath("../MoleStompGame"): "s_game_win"
+}
+metadata/_custom_type_script = "uid://cxnd2ovpbxl8i"
 
 [connection signal="s_normal_finished" from="MoleStompGame" to="Props/FenceGate" method="open"]

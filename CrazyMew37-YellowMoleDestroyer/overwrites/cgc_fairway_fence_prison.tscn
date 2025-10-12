@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bpibcolfu1oax"]
+[gd_scene load_steps=31 format=3 uid="uid://bw8nsgn468ot"]
 
 [ext_resource type="PackedScene" uid="uid://ch3xs1d1lu117" path="res://objects/modules/cgc/base_rooms/golfcourse_fairway.tscn" id="1_1es46"]
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="2_41dfl"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://cuc2bqks4qias" path="res://objects/modules/cgc/variants/armchair_manager_logic.gd" id="16_e1p1x"]
 [ext_resource type="Resource" uid="uid://cm5r6l5idf6rw" path="res://objects/cog/presets/misc/armchair_manager.tres" id="17_3ivfy"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="18_16ue4"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="18_41dfl"]
 [ext_resource type="Resource" uid="uid://kcxno616hkgc" path="res://objects/items/pools/special_items.tres" id="19_rxvs4"]
 [ext_resource type="PackedScene" uid="uid://bqvkntyk0ljsq" path="res://objects/goon/goon.tscn" id="20_elumg"]
 [ext_resource type="PackedScene" uid="uid://c1rus4vu8jrlg" path="res://objects/battle/battle_node/dynamic/battle_node_dynamic.tscn" id="21_p2mmb"]
@@ -377,7 +378,7 @@ connected_objects = [NodePath("../CogDoor")]
 
 [node name="SecretMoleStomp" type="Area3D" parent="." index="38" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.28947, 0, 5.22308)
-script = ExtResource("24_3ivfy")
+script = ExtResource("18_41dfl")
 game_mode = 1
 endless_stop_moles = false
 force_launch_node = NodePath("../SecretMoleForceLandPos")
@@ -397,7 +398,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7665, 0, 10.6726)
 
 [node name="SecretMole2" type="Area3D" parent="." index="42" node_paths=PackedStringArray("force_launch_node", "launch_cam")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1481, 0, -1.66242)
-script = ExtResource("24_3ivfy")
+script = ExtResource("18_41dfl")
 game_mode = 1
 endless_stop_moles = false
 force_launch_node = NodePath("../SecretMole2ForceLand")
