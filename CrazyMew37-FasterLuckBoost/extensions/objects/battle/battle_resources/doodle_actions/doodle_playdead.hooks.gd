@@ -23,7 +23,7 @@ func action(chain: ModLoaderHookChain):
 	await chain.reference_object.user.animator.animation_finished
 	
 	# Apply the 1 round status effect
-	var stat_effect = chain.reference_object.create_stat_boost('luck', 1.33)
+	var stat_effect = chain.reference_object.create_stat_boost('luck', 0.33)
 	chain.reference_object.manager.add_status_effect(stat_effect)
 	
 	# Focus player
