@@ -1,40 +1,36 @@
-[gd_scene load_steps=253 format=3 uid="uid://dn275bpqwi5qf"]
+[gd_scene load_steps=258 format=3 uid="uid://dn275bpqwi5qf"]
 
 [ext_resource type="Script" uid="uid://bkkf0vc8o0kx7" path="res://mods-unpacked/CrazyMew37-CogCreatorPlus/overwrites/cog_creator.gd" id="1_hil5c"]
-[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_04o45"]
-[ext_resource type="Resource" uid="uid://dix6b1st0kqmw" path="res://objects/cog/presets/bossbot/pencil_pusher.tres" id="3_1ixdn"]
-[ext_resource type="Resource" uid="uid://rggq704t8yst" path="res://objects/cog/presets/bossbot/yesman.tres" id="4_i7tp6"]
-[ext_resource type="Resource" uid="uid://d1dagndttbsbw" path="res://objects/cog/presets/bossbot/micromanager.tres" id="5_iksht"]
-[ext_resource type="Resource" uid="uid://c5dbwjk742di6" path="res://objects/cog/presets/bossbot/flunky.tres" id="5_l7bex"]
-[ext_resource type="Resource" uid="uid://d7keo6qbekul" path="res://objects/cog/presets/bossbot/downsizer.tres" id="6_g468c"]
-[ext_resource type="Resource" uid="uid://dpqmbcewheqv1" path="res://objects/cog/presets/bossbot/head_hunter.tres" id="7_pw51w"]
-[ext_resource type="Resource" uid="uid://wt32frxolvqs" path="res://objects/cog/presets/bossbot/corporate_raider.tres" id="8_bsylr"]
-[ext_resource type="Resource" uid="uid://j3g10bkhu2xx" path="res://objects/cog/presets/bossbot/the_big_cheese.tres" id="9_elknu"]
-[ext_resource type="Resource" uid="uid://cx6xpa02hhvfj" path="res://objects/cog/presets/lawbot/bottom_feeder.tres" id="10_d5nwh"]
-[ext_resource type="Resource" uid="uid://bqu2erj3ece7u" path="res://objects/cog/presets/lawbot/bloodsucker.tres" id="11_ahtoe"]
-[ext_resource type="Resource" uid="uid://4fdep217ep8s" path="res://objects/cog/presets/lawbot/double_talker.tres" id="12_clt36"]
-[ext_resource type="Resource" uid="uid://yiwg5566shlq" path="res://objects/cog/presets/lawbot/ambulance_chaser.tres" id="13_frv6j"]
-[ext_resource type="Resource" uid="uid://crdecksepx8wc" path="res://objects/cog/presets/lawbot/spin_doctor.tres" id="14_6qptg"]
-[ext_resource type="Resource" uid="uid://bfruo6oh25whk" path="res://objects/cog/presets/lawbot/legal_eagle.tres" id="15_dcm4t"]
-[ext_resource type="Resource" uid="uid://dmi4ular4dbie" path="res://objects/cog/presets/lawbot/big_wig.tres" id="16_y1ub6"]
-[ext_resource type="Resource" uid="uid://deum0qw8ucod3" path="res://objects/cog/presets/cashbot/short_change.tres" id="17_hqfvb"]
-[ext_resource type="Resource" uid="uid://uduwri1drnbo" path="res://objects/cog/presets/cashbot/penny_pincher.tres" id="18_wuxm8"]
-[ext_resource type="Resource" uid="uid://damgl643aokb3" path="res://objects/cog/presets/cashbot/tightwad.tres" id="19_2gdhj"]
-[ext_resource type="Resource" uid="uid://sfiho4ougsnc" path="res://objects/cog/presets/lawbot/back_stabber.tres" id="20_n0hjn"]
-[ext_resource type="Resource" uid="uid://c5hx67omlpw2u" path="res://objects/cog/presets/cashbot/bean_counter.tres" id="20_tgss3"]
-[ext_resource type="Resource" uid="uid://c4ocix1reawi8" path="res://objects/cog/presets/cashbot/number_cruncher.tres" id="21_86810"]
-[ext_resource type="Resource" uid="uid://c8mjcydt684s6" path="res://objects/cog/presets/cashbot/money_bags.tres" id="22_vsh8i"]
-[ext_resource type="Resource" uid="uid://bhkr2rukaqiv6" path="res://objects/cog/presets/cashbot/loan_shark.tres" id="23_beqku"]
-[ext_resource type="Resource" uid="uid://dijh2jf6717ci" path="res://objects/cog/presets/cashbot/robber_baron.tres" id="24_66txp"]
-[ext_resource type="Resource" uid="uid://b4jf6084dolhy" path="res://objects/cog/presets/sellbot/cold_caller.tres" id="25_4ynyl"]
-[ext_resource type="Resource" uid="uid://4msaan0a5lf3" path="res://objects/cog/presets/sellbot/telemarketer.tres" id="26_o7oq4"]
-[ext_resource type="Resource" uid="uid://canccpjghjae7" path="res://objects/cog/presets/sellbot/glad_hander.tres" id="27_ucq8c"]
-[ext_resource type="Resource" uid="uid://c2sbco2b7ddrt" path="res://objects/cog/presets/sellbot/two_face.tres" id="28_81k1f"]
-[ext_resource type="Resource" uid="uid://b0iiauyxvm2su" path="res://objects/cog/presets/sellbot/mover_shaker.tres" id="29_e46fc"]
-[ext_resource type="Resource" uid="uid://d3j6v3o7y5d0w" path="res://objects/cog/presets/sellbot/the_mingler.tres" id="29_j8npl"]
-[ext_resource type="Resource" uid="uid://q8ev1hag3yvy" path="res://objects/cog/presets/sellbot/mr_hollywood.tres" id="30_gq4ya"]
-[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/name_dropper.tres" id="31_ark6c"]
-[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="31_vhyp1"]
+[ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="2_2gdhj"]
+[ext_resource type="Resource" uid="uid://dix6b1st0kqmw" path="res://objects/cog/presets/bossbot/pencil_pusher.tres" id="3_tgss3"]
+[ext_resource type="Resource" uid="uid://rggq704t8yst" path="res://objects/cog/presets/bossbot/yesman.tres" id="4_86810"]
+[ext_resource type="Resource" uid="uid://d1dagndttbsbw" path="res://objects/cog/presets/bossbot/micromanager.tres" id="5_vsh8i"]
+[ext_resource type="Resource" uid="uid://d7keo6qbekul" path="res://objects/cog/presets/bossbot/downsizer.tres" id="6_beqku"]
+[ext_resource type="Resource" uid="uid://dpqmbcewheqv1" path="res://objects/cog/presets/bossbot/head_hunter.tres" id="7_66txp"]
+[ext_resource type="Resource" uid="uid://wt32frxolvqs" path="res://objects/cog/presets/bossbot/corporate_raider.tres" id="8_4ynyl"]
+[ext_resource type="Resource" uid="uid://j3g10bkhu2xx" path="res://objects/cog/presets/bossbot/the_big_cheese.tres" id="9_o7oq4"]
+[ext_resource type="Resource" uid="uid://cx6xpa02hhvfj" path="res://objects/cog/presets/lawbot/bottom_feeder.tres" id="10_ucq8c"]
+[ext_resource type="Resource" uid="uid://bqu2erj3ece7u" path="res://objects/cog/presets/lawbot/bloodsucker.tres" id="11_81k1f"]
+[ext_resource type="Resource" uid="uid://4fdep217ep8s" path="res://objects/cog/presets/lawbot/double_talker.tres" id="12_j8npl"]
+[ext_resource type="Resource" uid="uid://yiwg5566shlq" path="res://objects/cog/presets/lawbot/ambulance_chaser.tres" id="13_gq4ya"]
+[ext_resource type="Resource" uid="uid://crdecksepx8wc" path="res://objects/cog/presets/lawbot/spin_doctor.tres" id="14_vhyp1"]
+[ext_resource type="Resource" uid="uid://bfruo6oh25whk" path="res://objects/cog/presets/lawbot/legal_eagle.tres" id="15_gwgr6"]
+[ext_resource type="Resource" uid="uid://dmi4ular4dbie" path="res://objects/cog/presets/lawbot/big_wig.tres" id="16_13npo"]
+[ext_resource type="Resource" uid="uid://deum0qw8ucod3" path="res://objects/cog/presets/cashbot/short_change.tres" id="17_tt5r1"]
+[ext_resource type="Resource" uid="uid://uduwri1drnbo" path="res://objects/cog/presets/cashbot/penny_pincher.tres" id="18_sfhw4"]
+[ext_resource type="Resource" uid="uid://damgl643aokb3" path="res://objects/cog/presets/cashbot/tightwad.tres" id="19_2mvd2"]
+[ext_resource type="Resource" uid="uid://c5hx67omlpw2u" path="res://objects/cog/presets/cashbot/bean_counter.tres" id="20_1n0ec"]
+[ext_resource type="Resource" uid="uid://c4ocix1reawi8" path="res://objects/cog/presets/cashbot/number_cruncher.tres" id="21_nlfrt"]
+[ext_resource type="Resource" uid="uid://c8mjcydt684s6" path="res://objects/cog/presets/cashbot/money_bags.tres" id="22_a5qn0"]
+[ext_resource type="Resource" uid="uid://bhkr2rukaqiv6" path="res://objects/cog/presets/cashbot/loan_shark.tres" id="23_34d7b"]
+[ext_resource type="Resource" uid="uid://dijh2jf6717ci" path="res://objects/cog/presets/cashbot/robber_baron.tres" id="24_v1y63"]
+[ext_resource type="Resource" uid="uid://b4jf6084dolhy" path="res://objects/cog/presets/sellbot/cold_caller.tres" id="25_22tig"]
+[ext_resource type="Resource" uid="uid://4msaan0a5lf3" path="res://objects/cog/presets/sellbot/telemarketer.tres" id="26_yns5u"]
+[ext_resource type="Resource" uid="uid://canccpjghjae7" path="res://objects/cog/presets/sellbot/glad_hander.tres" id="27_bc2hc"]
+[ext_resource type="Resource" uid="uid://c2sbco2b7ddrt" path="res://objects/cog/presets/sellbot/two_face.tres" id="28_gbpen"]
+[ext_resource type="Resource" uid="uid://d3j6v3o7y5d0w" path="res://objects/cog/presets/sellbot/the_mingler.tres" id="29_o42hi"]
+[ext_resource type="Resource" uid="uid://q8ev1hag3yvy" path="res://objects/cog/presets/sellbot/mr_hollywood.tres" id="30_rjju8"]
+[ext_resource type="Script" uid="uid://buc4y0vtgydo" path="res://objects/cog/cog_pool.gd" id="31_3tp1m"]
 [ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="32_gwgr6"]
 [ext_resource type="Resource" uid="uid://dc3wprcrjg58t" path="res://objects/battle/battle_resources/cog_attacks/resources/audit.tres" id="33_13npo"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="34_tt5r1"]
@@ -58,6 +54,7 @@
 [ext_resource type="Resource" uid="uid://wwf1notai2f8" path="res://objects/battle/battle_resources/cog_attacks/resources/power_trip.tres" id="52_gtk01"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="53_1vv53"]
 [ext_resource type="Resource" uid="uid://erbbarg5bxm8" path="res://objects/battle/battle_resources/cog_attacks/resources/rolodex.tres" id="54_oo6vm"]
+[ext_resource type="Resource" uid="uid://l385j58744f6" path="res://objects/battle/battle_resources/cog_attacks/resources/restraining_order.tres" id="54_tgss3"]
 [ext_resource type="Resource" uid="uid://bxeasogxfcdk2" path="res://objects/battle/battle_resources/cog_attacks/resources/tabulate.tres" id="55_q48q1"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="56_neob3"]
 [ext_resource type="Resource" uid="uid://b6smgrhefhpdk" path="res://objects/battle/battle_resources/cog_attacks/resources/sink_hole.tres" id="57_cyy4e"]
@@ -109,7 +106,10 @@
 [ext_resource type="Texture2D" uid="uid://c054agx0tyrdv" path="res://models/cogs/heads/ambulancechaser_tt_t_ene_hed_ambulanceChaser_new.png" id="101_umv2m"]
 [ext_resource type="Texture2D" uid="uid://d4jk7bkmn8kk2" path="res://models/cogs/heads/backstabber_tt_t_ene_hed_backStabber.png" id="102_po1ty"]
 [ext_resource type="Texture2D" uid="uid://mlf0fm5xd0x7" path="res://models/cogs/heads/beancounter.png" id="103_411qm"]
+[ext_resource type="PackedScene" uid="uid://b5u0jrmhoxj03" path="res://models/cogs/heads/stickler.glb" id="103_yroab"]
 [ext_resource type="Texture2D" uid="uid://m5uwda6bh8yj" path="res://models/cogs/heads/beancounter_desat.png" id="104_q6dqb"]
+[ext_resource type="PackedScene" uid="uid://40avs48mfxix" path="res://models/cogs/heads/Livewire.fbx" id="104_qmhba"]
+[ext_resource type="PackedScene" uid="uid://c3kidekq7t47b" path="res://models/cogs/heads/CashCow.fbx" id="105_0b76y"]
 [ext_resource type="Texture2D" uid="uid://db3dhlenfdjba" path="res://models/cogs/heads/beancounter_bean_counter.png" id="105_vk6q5"]
 [ext_resource type="Texture2D" uid="uid://cxm7mr0o2vr3p" path="res://models/cogs/heads/bigcheese_big_cheese_new_1.png" id="106_fajyh"]
 [ext_resource type="Texture2D" uid="uid://ga845l5kh235" path="res://models/cogs/heads/bigwig_tt_t_ene_hed_bigWig.png" id="107_e7k1c"]
@@ -186,10 +186,14 @@
 [ext_resource type="Texture2D" uid="uid://drto8mshmx6tu" path="res://models/cogs/textures/sell/leg.png" id="178_ypwd7"]
 [ext_resource type="Texture2D" uid="uid://dlu4g5oiwhrjt" path="res://models/cogs/textures/cash/sleeve.png" id="179_d6ptp"]
 [ext_resource type="Texture2D" uid="uid://2ypgaxuc4w7l" path="res://models/cogs/textures/cash/blazer.png" id="180_2mp1q"]
+[ext_resource type="Texture2D" uid="uid://dafm48ro847ma" path="res://models/cogs/heads/stickler_stickler.png" id="181_gtk01"]
 [ext_resource type="Texture2D" uid="uid://c5ax3th0ylb3u" path="res://models/cogs/textures/cash/leg.png" id="181_nkh30"]
 [ext_resource type="Texture2D" uid="uid://cb056w2i1gky0" path="res://models/cogs/textures/law/sleeve.png" id="182_0m4gl"]
+[ext_resource type="Texture2D" uid="uid://caxd20ejrbd1b" path="res://models/cogs/heads/branchler.png" id="182_1vv53"]
 [ext_resource type="Texture2D" uid="uid://bmc4flbdyynfc" path="res://models/cogs/textures/law/blazer.png" id="183_4lrjk"]
+[ext_resource type="Texture2D" uid="uid://v28nh3cg5gqx" path="res://models/cogs/heads/livewire.png" id="183_oo6vm"]
 [ext_resource type="Texture2D" uid="uid://q3f5rh8oklei" path="res://models/cogs/textures/law/leg.png" id="184_gsx4t"]
+[ext_resource type="Texture2D" uid="uid://bg0d8owjdyaxq" path="res://models/cogs/heads/cashCow.png" id="184_q48q1"]
 [ext_resource type="Texture2D" uid="uid://53dqjekuqhch" path="res://models/cogs/textures/boss/sleeve.png" id="185_8nh8p"]
 [ext_resource type="Texture2D" uid="uid://c1hrivmmm03xq" path="res://models/cogs/textures/boss/blazer.png" id="186_npo2t"]
 [ext_resource type="Texture2D" uid="uid://da3cgj0d5ttcp" path="res://models/cogs/textures/boss/leg.png" id="187_57dvm"]
@@ -238,10 +242,9 @@
 [ext_resource type="Texture2D" uid="uid://ddlydc15tuxe3" path="res://ui_assets/general/tt_t_gui_mat_closeUp.png" id="221_ojop1"]
 [ext_resource type="Texture2D" uid="uid://dkuel6g6u2cat" path="res://ui_assets/general/tt_t_gui_mat_closeDown.png" id="222_u7wiv"]
 
-[sub_resource type="Resource" id="Resource_lhy5e"]
-script = ExtResource("31_vhyp1")
-cogs = Array[ExtResource("2_04o45")]([ExtResource("8_bsylr"), ExtResource("6_g468c"), ExtResource("5_l7bex"), ExtResource("7_pw51w"), ExtResource("5_iksht"), ExtResource("3_1ixdn"), ExtResource("9_elknu"), ExtResource("4_i7tp6"), ExtResource("20_tgss3"), ExtResource("23_beqku"), ExtResource("22_vsh8i"), ExtResource("21_86810"), ExtResource("18_wuxm8"), ExtResource("24_66txp"), ExtResource("17_hqfvb"), ExtResource("19_2gdhj"), ExtResource("13_frv6j"), ExtResource("20_n0hjn"), ExtResource("16_y1ub6"), ExtResource("11_ahtoe"), ExtResource("10_d5nwh"), ExtResource("12_clt36"), ExtResource("15_dcm4t"), ExtResource("14_6qptg"), ExtResource("25_4ynyl"), ExtResource("27_ucq8c"), ExtResource("29_e46fc"), ExtResource("30_gq4ya"), ExtResource("31_ark6c"), ExtResource("26_o7oq4"), ExtResource("29_j8npl"), ExtResource("28_81k1f")])
-metadata/_custom_type_script = "uid://ocitcstc3bru"
+[sub_resource type="Resource" id="Resource_neob3"]
+script = ExtResource("31_3tp1m")
+cogs = Array[ExtResource("2_2gdhj")]([ExtResource("3_tgss3"), ExtResource("4_86810"), ExtResource("5_vsh8i"), ExtResource("6_beqku"), ExtResource("7_66txp"), ExtResource("8_4ynyl"), ExtResource("9_o7oq4"), ExtResource("10_ucq8c"), ExtResource("11_81k1f"), ExtResource("12_j8npl"), ExtResource("13_gq4ya"), ExtResource("14_vhyp1"), ExtResource("15_gwgr6"), ExtResource("16_13npo"), ExtResource("17_tt5r1"), ExtResource("18_sfhw4"), ExtResource("19_2mvd2"), ExtResource("20_1n0ec"), ExtResource("21_nlfrt"), ExtResource("22_a5qn0"), ExtResource("23_34d7b"), ExtResource("24_v1y63"), ExtResource("25_22tig"), ExtResource("26_yns5u"), ExtResource("27_bc2hc"), ExtResource("28_gbpen"), ExtResource("29_o42hi"), ExtResource("30_rjju8")])
 
 [sub_resource type="Environment" id="Environment_5pl30"]
 ambient_light_source = 2
@@ -250,7 +253,7 @@ ssr_max_steps = 142
 ssr_fade_in = 0.764735
 ssr_fade_out = 1.36604
 ssr_depth_tolerance = 28.01
-ssao_power = 1e+06
+ssao_power = 1000000.0
 glow_normalized = true
 glow_intensity = 8.0
 glow_bloom = 1.0
@@ -301,6 +304,12 @@ font = ExtResource("207_mby6b")
 font_size = 15
 font_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_5elsc"]
+font = ExtResource("207_mby6b")
+font_size = 24
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_jadvc"]
 font = ExtResource("207_mby6b")
 font_size = 24
@@ -341,12 +350,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hil5c")
-safe_cogs = SubResource("Resource_lhy5e")
-suit_a_attacks = Array[ExtResource("32_gwgr6")]([ExtResource("33_13npo"), ExtResource("34_tt5r1"), ExtResource("35_sfhw4"), ExtResource("36_2mvd2"), ExtResource("37_1n0ec"), ExtResource("38_nlfrt"), ExtResource("39_a5qn0"), ExtResource("40_34d7b"), ExtResource("41_v1y63"), ExtResource("42_22tig"), ExtResource("43_yns5u"), ExtResource("44_bc2hc"), ExtResource("45_gbpen"), ExtResource("46_o42hi"), ExtResource("47_rjju8"), ExtResource("48_3tp1m"), ExtResource("49_yroab"), ExtResource("50_qmhba"), ExtResource("51_0b76y"), ExtResource("52_gtk01"), ExtResource("53_1vv53"), ExtResource("54_oo6vm"), ExtResource("55_q48q1"), ExtResource("56_neob3"), ExtResource("57_cyy4e"), ExtResource("58_5elsc"), ExtResource("63_pw51w"), ExtResource("64_bsylr")])
-suit_b_attacks = Array[ExtResource("32_gwgr6")]([ExtResource("34_tt5r1"), ExtResource("38_nlfrt"), ExtResource("36_2mvd2"), ExtResource("37_1n0ec"), ExtResource("40_34d7b"), ExtResource("42_22tig"), ExtResource("43_yns5u"), ExtResource("44_bc2hc"), ExtResource("45_gbpen"), ExtResource("46_o42hi"), ExtResource("47_rjju8"), ExtResource("48_3tp1m"), ExtResource("49_yroab"), ExtResource("50_qmhba"), ExtResource("51_0b76y"), ExtResource("52_gtk01"), ExtResource("59_2fk3r"), ExtResource("54_oo6vm"), ExtResource("60_t4yu6"), ExtResource("61_r3ty2"), ExtResource("62_2cxgk"), ExtResource("57_cyy4e"), ExtResource("58_5elsc"), ExtResource("63_pw51w"), ExtResource("64_bsylr")])
+safe_cogs = SubResource("Resource_neob3")
+suit_a_attacks = Array[ExtResource("32_gwgr6")]([ExtResource("33_13npo"), ExtResource("34_tt5r1"), ExtResource("35_sfhw4"), ExtResource("36_2mvd2"), ExtResource("37_1n0ec"), ExtResource("38_nlfrt"), ExtResource("39_a5qn0"), ExtResource("40_34d7b"), ExtResource("41_v1y63"), ExtResource("42_22tig"), ExtResource("43_yns5u"), ExtResource("44_bc2hc"), ExtResource("45_gbpen"), ExtResource("46_o42hi"), ExtResource("47_rjju8"), ExtResource("48_3tp1m"), ExtResource("49_yroab"), ExtResource("50_qmhba"), ExtResource("51_0b76y"), ExtResource("52_gtk01"), ExtResource("53_1vv53"), ExtResource("54_tgss3"), ExtResource("54_oo6vm"), ExtResource("55_q48q1"), ExtResource("56_neob3"), ExtResource("57_cyy4e"), ExtResource("58_5elsc"), ExtResource("63_pw51w"), ExtResource("64_bsylr")])
+suit_b_attacks = Array[ExtResource("32_gwgr6")]([ExtResource("34_tt5r1"), ExtResource("38_nlfrt"), ExtResource("36_2mvd2"), ExtResource("37_1n0ec"), ExtResource("40_34d7b"), ExtResource("42_22tig"), ExtResource("43_yns5u"), ExtResource("44_bc2hc"), ExtResource("45_gbpen"), ExtResource("46_o42hi"), ExtResource("47_rjju8"), ExtResource("48_3tp1m"), ExtResource("49_yroab"), ExtResource("50_qmhba"), ExtResource("51_0b76y"), ExtResource("52_gtk01"), ExtResource("59_2fk3r"), ExtResource("54_tgss3"), ExtResource("54_oo6vm"), ExtResource("60_t4yu6"), ExtResource("61_r3ty2"), ExtResource("62_2cxgk"), ExtResource("57_cyy4e"), ExtResource("58_5elsc"), ExtResource("63_pw51w"), ExtResource("64_bsylr")])
 suit_c_attacks = Array[ExtResource("32_gwgr6")]([ExtResource("34_tt5r1"), ExtResource("36_2mvd2"), ExtResource("37_1n0ec"), ExtResource("39_a5qn0"), ExtResource("40_34d7b"), ExtResource("41_v1y63"), ExtResource("42_22tig"), ExtResource("43_yns5u"), ExtResource("44_bc2hc"), ExtResource("45_gbpen"), ExtResource("46_o42hi"), ExtResource("47_rjju8"), ExtResource("49_yroab"), ExtResource("50_qmhba"), ExtResource("51_0b76y"), ExtResource("52_gtk01"), ExtResource("63_xrfmg"), ExtResource("57_cyy4e"), ExtResource("58_5elsc"), ExtResource("63_pw51w"), ExtResource("64_bsylr")])
-head_model_files = Array[PackedScene]([ExtResource("64_hk3dm"), ExtResource("65_o2iyp"), ExtResource("66_s6rfl"), ExtResource("67_d44x0"), ExtResource("68_4vq3j"), ExtResource("69_btvab"), ExtResource("70_0w757"), ExtResource("71_xvykf"), ExtResource("72_i0vi0"), ExtResource("73_ufdw8"), ExtResource("74_iaos6"), ExtResource("75_o1tdq"), ExtResource("76_cusvk"), ExtResource("77_d7sli"), ExtResource("78_cir1b"), ExtResource("79_xjstr"), ExtResource("80_5yv5j"), ExtResource("81_35ikr"), ExtResource("82_co8jj"), ExtResource("83_5rxk8"), ExtResource("84_6nfko"), ExtResource("85_ax8u8"), ExtResource("86_rd1gx"), ExtResource("87_14kpw"), ExtResource("88_h73bq"), ExtResource("89_4hb3j"), ExtResource("90_s8v3v"), ExtResource("91_2t524"), ExtResource("92_ay63h"), ExtResource("93_0fd7d"), ExtResource("94_nnwq0"), ExtResource("95_rxtuk"), ExtResource("96_8f742"), ExtResource("97_y11e7"), ExtResource("98_41b36"), ExtResource("99_j73wg"), ExtResource("100_3vi7c")])
-head_texture_files = Array[Texture2D]([ExtResource("101_umv2m"), ExtResource("102_po1ty"), ExtResource("103_411qm"), ExtResource("104_q6dqb"), ExtResource("105_vk6q5"), ExtResource("106_fajyh"), ExtResource("107_e7k1c"), ExtResource("108_0ajgx"), ExtResource("109_h3rt6"), ExtResource("110_aq27n"), ExtResource("111_vif2g"), ExtResource("112_or72m"), ExtResource("113_g2fra"), ExtResource("114_vurji"), ExtResource("115_e5hnk"), ExtResource("116_nm2is"), ExtResource("117_oklr6"), ExtResource("118_ync7k"), ExtResource("119_1uy8u"), ExtResource("120_61tiv"), ExtResource("121_k8eek"), ExtResource("122_pg7bf"), ExtResource("123_nwd1a"), ExtResource("124_kor12"), ExtResource("125_xti4h"), ExtResource("126_0qv8m"), ExtResource("127_lhijt"), ExtResource("128_1mldq"), ExtResource("129_bhtp2"), ExtResource("130_06j51"), ExtResource("131_crlpx"), ExtResource("132_kyerr"), ExtResource("133_ulmeo"), ExtResource("134_m5x0r"), ExtResource("135_yq7al"), ExtResource("136_s42xi"), ExtResource("137_0ywu6"), ExtResource("138_jtnu8"), ExtResource("139_jeget"), ExtResource("140_lncor"), ExtResource("141_8gvtj"), ExtResource("142_iqtxc"), ExtResource("143_lrg87"), ExtResource("144_ogutv"), ExtResource("145_jbnxw"), ExtResource("146_a23j7"), ExtResource("147_c2y70"), ExtResource("148_e4xyi"), ExtResource("149_lk77q"), ExtResource("150_4587i"), ExtResource("151_qm60v"), ExtResource("152_cfahm"), ExtResource("153_0dpe5"), ExtResource("154_ldr85"), ExtResource("155_5my5f"), ExtResource("156_evi7f"), ExtResource("157_yx4w3"), ExtResource("158_crwa3"), ExtResource("159_t8o5x"), ExtResource("160_kb3lq"), ExtResource("161_u6r7l"), ExtResource("162_hdoum"), ExtResource("163_2avkj"), ExtResource("164_qiwyf"), ExtResource("165_h3a7x"), ExtResource("166_jqxdb"), ExtResource("139_jeget"), ExtResource("167_8t4h3"), ExtResource("168_55fsn"), ExtResource("169_17vi8"), ExtResource("170_klgje"), ExtResource("171_jbqhy"), ExtResource("172_n5l2x"), ExtResource("173_6yuee"), ExtResource("174_qbg8s"), ExtResource("175_p3bf2")])
+head_model_files = Array[PackedScene]([ExtResource("64_hk3dm"), ExtResource("65_o2iyp"), ExtResource("66_s6rfl"), ExtResource("67_d44x0"), ExtResource("68_4vq3j"), ExtResource("69_btvab"), ExtResource("70_0w757"), ExtResource("71_xvykf"), ExtResource("72_i0vi0"), ExtResource("73_ufdw8"), ExtResource("74_iaos6"), ExtResource("75_o1tdq"), ExtResource("76_cusvk"), ExtResource("77_d7sli"), ExtResource("78_cir1b"), ExtResource("79_xjstr"), ExtResource("80_5yv5j"), ExtResource("81_35ikr"), ExtResource("82_co8jj"), ExtResource("83_5rxk8"), ExtResource("84_6nfko"), ExtResource("85_ax8u8"), ExtResource("86_rd1gx"), ExtResource("87_14kpw"), ExtResource("88_h73bq"), ExtResource("89_4hb3j"), ExtResource("90_s8v3v"), ExtResource("91_2t524"), ExtResource("92_ay63h"), ExtResource("93_0fd7d"), ExtResource("94_nnwq0"), ExtResource("95_rxtuk"), ExtResource("96_8f742"), ExtResource("97_y11e7"), ExtResource("98_41b36"), ExtResource("99_j73wg"), ExtResource("100_3vi7c"), ExtResource("103_yroab"), ExtResource("104_qmhba"), ExtResource("105_0b76y")])
+head_texture_files = Array[Texture2D]([ExtResource("101_umv2m"), ExtResource("102_po1ty"), ExtResource("103_411qm"), ExtResource("104_q6dqb"), ExtResource("105_vk6q5"), ExtResource("106_fajyh"), ExtResource("107_e7k1c"), ExtResource("108_0ajgx"), ExtResource("109_h3rt6"), ExtResource("110_aq27n"), ExtResource("111_vif2g"), ExtResource("112_or72m"), ExtResource("113_g2fra"), ExtResource("114_vurji"), ExtResource("115_e5hnk"), ExtResource("116_nm2is"), ExtResource("117_oklr6"), ExtResource("118_ync7k"), ExtResource("119_1uy8u"), ExtResource("120_61tiv"), ExtResource("121_k8eek"), ExtResource("122_pg7bf"), ExtResource("123_nwd1a"), ExtResource("124_kor12"), ExtResource("125_xti4h"), ExtResource("126_0qv8m"), ExtResource("127_lhijt"), ExtResource("128_1mldq"), ExtResource("129_bhtp2"), ExtResource("130_06j51"), ExtResource("131_crlpx"), ExtResource("132_kyerr"), ExtResource("133_ulmeo"), ExtResource("134_m5x0r"), ExtResource("135_yq7al"), ExtResource("136_s42xi"), ExtResource("137_0ywu6"), ExtResource("138_jtnu8"), ExtResource("139_jeget"), ExtResource("140_lncor"), ExtResource("141_8gvtj"), ExtResource("142_iqtxc"), ExtResource("143_lrg87"), ExtResource("144_ogutv"), ExtResource("145_jbnxw"), ExtResource("146_a23j7"), ExtResource("147_c2y70"), ExtResource("148_e4xyi"), ExtResource("149_lk77q"), ExtResource("150_4587i"), ExtResource("151_qm60v"), ExtResource("152_cfahm"), ExtResource("153_0dpe5"), ExtResource("154_ldr85"), ExtResource("155_5my5f"), ExtResource("156_evi7f"), ExtResource("157_yx4w3"), ExtResource("158_crwa3"), ExtResource("159_t8o5x"), ExtResource("160_kb3lq"), ExtResource("161_u6r7l"), ExtResource("162_hdoum"), ExtResource("163_2avkj"), ExtResource("164_qiwyf"), ExtResource("165_h3a7x"), ExtResource("166_jqxdb"), ExtResource("139_jeget"), ExtResource("167_8t4h3"), ExtResource("168_55fsn"), ExtResource("169_17vi8"), ExtResource("170_klgje"), ExtResource("171_jbqhy"), ExtResource("172_n5l2x"), ExtResource("173_6yuee"), ExtResource("174_qbg8s"), ExtResource("175_p3bf2"), ExtResource("181_gtk01"), ExtResource("182_1vv53"), ExtResource("183_oo6vm"), ExtResource("184_q48q1")])
 blazer_texture_files = Array[Texture2D]([ExtResource("186_npo2t"), ExtResource("180_2mp1q"), ExtResource("189_1ki5l"), ExtResource("183_4lrjk"), ExtResource("194_pwcys"), ExtResource("177_1wpoh"), ExtResource("197_rrgpc"), ExtResource("191_jmsvh"), ExtResource("200_xpfdn"), ExtResource("191_frv6j"), ExtResource("192_6qptg"), ExtResource("193_dcm4t")])
 sleeve_texture_files = Array[Texture2D]([ExtResource("185_8nh8p"), ExtResource("179_d6ptp"), ExtResource("188_ucsjk"), ExtResource("182_0m4gl"), ExtResource("193_q4md2"), ExtResource("176_tj510"), ExtResource("196_ykibo"), ExtResource("201_y1ub6"), ExtResource("190_bbn4o"), ExtResource("203_hqfvb"), ExtResource("204_wuxm8"), ExtResource("199_4hpf1")])
 leg_texture_files = Array[Texture2D]([ExtResource("187_57dvm"), ExtResource("181_nkh30"), ExtResource("188_ucsjk"), ExtResource("184_gsx4t"), ExtResource("195_kldqf"), ExtResource("178_ypwd7"), ExtResource("198_ajjie"), ExtResource("212_y1ub6"), ExtResource("192_0u74k"), ExtResource("214_hqfvb"), ExtResource("215_wuxm8"), ExtResource("201_wr314")])
@@ -512,6 +521,9 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/"
 allowed_types = Array[String](["png", "jpg"])
 
+[node name="OpenButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" index="0"]
+font_size = 24.0
+
 [node name="GeneralButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" index="1" instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
@@ -520,10 +532,14 @@ texture_pressed = ExtResource("211_m4hjc")
 texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Use Default"
+font_size = 24.0
 
 [node name="Label" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use Default"
 label_settings = SubResource("LabelSettings_pw51w")
+
+[node name="CancelButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/LoadPanel" index="1"]
+font_size = 24.0
 
 [node name="HeadModifiers" type="Control" parent="Menus"]
 visible = false
@@ -669,6 +685,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Use
 Default"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/BlazerTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use
@@ -679,6 +696,7 @@ label_settings = SubResource("LabelSettings_elknu")
 custom_minimum_size = Vector2(72, 60)
 text = "Load
 Custom"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/BlazerTexDirectory/FooterButtons/OpenButton" index="0"]
 text = "Load
@@ -697,6 +715,7 @@ label_settings = SubResource("LabelSettings_d5nwh")
 custom_minimum_size = Vector2(80, 60)
 offset_left = -40.0
 offset_right = 40.0
+font_size = 20.0
 
 [node name="Label" parent="Menus/SuitSelector/BlazerTexDirectory/LoadPanel/CancelButton" index="0"]
 label_settings = SubResource("LabelSettings_ahtoe")
@@ -769,6 +788,7 @@ offset_right = -13.0
 custom_minimum_size = Vector2(72, 60)
 text = "Use
 Default"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/SleeveTexDirectory/FooterButtons/OpenButton" index="0"]
 text = "Use
@@ -784,6 +804,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Load
 Custom"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/SleeveTexDirectory/FooterButtons/OpenButton2" index="0"]
 text = "Load
@@ -802,6 +823,7 @@ label_settings = SubResource("LabelSettings_d5nwh")
 custom_minimum_size = Vector2(80, 60)
 offset_left = -40.0
 offset_right = 40.0
+font_size = 20.0
 
 [node name="Label" parent="Menus/SuitSelector/SleeveTexDirectory/LoadPanel/CancelButton" index="0"]
 label_settings = SubResource("LabelSettings_ahtoe")
@@ -836,6 +858,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Use
 Default"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/SleeveTexDirectory/FooterButtons2/GeneralButton" index="0"]
 text = "Use
@@ -851,6 +874,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Load
 Custom"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/SleeveTexDirectory/FooterButtons2/OpenButton" index="0"]
 text = "Load
@@ -889,6 +913,7 @@ offset_right = -13.0
 custom_minimum_size = Vector2(72, 60)
 text = "Use
 Default"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/LegTexDirectory/FooterButtons/OpenButton" index="0"]
 text = "Use
@@ -904,6 +929,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Load
 Custom"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/LegTexDirectory/FooterButtons/OpenButton2" index="0"]
 text = "Load
@@ -922,6 +948,7 @@ label_settings = SubResource("LabelSettings_d5nwh")
 custom_minimum_size = Vector2(80, 60)
 offset_left = -40.0
 offset_right = 40.0
+font_size = 20.0
 
 [node name="Label" parent="Menus/SuitSelector/LegTexDirectory/LoadPanel/CancelButton" index="0"]
 label_settings = SubResource("LabelSettings_ahtoe")
@@ -956,6 +983,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Use
 Default"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/LegTexDirectory/FooterButtons2/GeneralButton" index="0"]
 text = "Use
@@ -971,6 +999,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Load
 Custom"
+font_size = 16.0
 
 [node name="Label" parent="Menus/SuitSelector/LegTexDirectory/FooterButtons2/OpenButton" index="0"]
 text = "Load
@@ -1102,18 +1131,6 @@ label_settings = SubResource("LabelSettings_w0kd7")
 layout_mode = 2
 theme_override_fonts/font = ExtResource("207_mby6b")
 
-[node name="NameTitle" type="VBoxContainer" parent="Menus/AtrributeSelectors/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Menus/AtrributeSelectors/VBoxContainer/NameTitle"]
-layout_mode = 2
-text = "Title:"
-label_settings = SubResource("LabelSettings_w0kd7")
-
-[node name="LineEdit" type="LineEdit" parent="Menus/AtrributeSelectors/VBoxContainer/NameTitle"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("207_mby6b")
-
 [node name="Spacer" type="Control" parent="Menus/AtrributeSelectors/VBoxContainer"]
 custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
@@ -1175,6 +1192,62 @@ label_settings = SubResource("LabelSettings_w0kd7")
 layout_mode = 2
 theme = ExtResource("206_3yxei")
 max_value = 10.0
+value = 1.0
+
+[node name="AtrributeSelectorsPart2" type="Control" parent="Menus"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menus/AtrributeSelectorsPart2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -376.0
+offset_top = -91.0
+offset_right = -28.0
+offset_bottom = 91.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="NametagSuffix" type="VBoxContainer" parent="Menus/AtrributeSelectorsPart2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menus/AtrributeSelectorsPart2/VBoxContainer/NametagSuffix"]
+layout_mode = 2
+text = "Custom Nametag Suffix:"
+label_settings = SubResource("LabelSettings_5elsc")
+
+[node name="LineEdit" type="LineEdit" parent="Menus/AtrributeSelectorsPart2/VBoxContainer/NametagSuffix"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("207_mby6b")
+placeholder_text = "e.g. \"Director\", \"Administrator\""
+
+[node name="Spacer" type="Control" parent="Menus/AtrributeSelectorsPart2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="HealthModifier" type="VBoxContainer" parent="Menus/AtrributeSelectorsPart2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier"]
+layout_mode = 2
+text = "Health Multiplier:"
+label_settings = SubResource("LabelSettings_w0kd7")
+
+[node name="HSlider" type="HSlider" parent="Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier"]
+layout_mode = 2
+theme = ExtResource("206_3yxei")
+min_value = 0.1
+max_value = 5.0
+step = 0.01
 value = 1.0
 
 [node name="AttackPicker" type="Control" parent="Menus"]
@@ -1302,7 +1375,7 @@ layout_mode = 2
 
 [node name="CheckBoxContainer" type="HBoxContainer" parent="Menus/AttackPicker"]
 visible = false
-layout_mode = 2
+layout_mode = 0
 offset_left = 853.0
 offset_top = 180.0
 offset_right = 1093.0
@@ -1317,36 +1390,6 @@ horizontal_alignment = 1
 [node name="CheckBox" type="CheckBox" parent="Menus/AttackPicker/CheckBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Menus/AttackPicker"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -313.0
-offset_top = 142.0
-offset_right = -43.0
-offset_bottom = 234.0
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="LevelMinimum2" type="VBoxContainer" parent="Menus/AttackPicker/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Menus/AttackPicker/VBoxContainer/LevelMinimum2"]
-layout_mode = 2
-text = "Health Multiplier:"
-label_settings = SubResource("LabelSettings_w0kd7")
-
-[node name="HSlider" type="HSlider" parent="Menus/AttackPicker/VBoxContainer/LevelMinimum2"]
-layout_mode = 2
-theme = ExtResource("206_3yxei")
-min_value = 0.1
-max_value = 5.0
-step = 0.01
-value = 1.0
 
 [node name="BattlePhraseEditor" type="Control" parent="Menus"]
 visible = false
@@ -1420,6 +1463,7 @@ texture_pressed = ExtResource("211_m4hjc")
 texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 text = "Add"
+font_size = 18.0
 
 [node name="Label" parent="Menus/BattlePhraseEditor/Panel/AddButton" index="0"]
 text = "Add"
@@ -1443,6 +1487,7 @@ texture_normal = ExtResource("214_rnf4u")
 texture_pressed = ExtResource("215_0qghc")
 texture_hover = ExtResource("216_xl1q7")
 texture_disabled = null
+font_size = 36.0
 
 [node name="Header" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -1458,6 +1503,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "New"
+font_size = 36.0
 
 [node name="SaveButton" parent="Header" instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(0, 90)
@@ -1468,6 +1514,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "Save"
+font_size = 36.0
 
 [node name="OpenButton" parent="Header" instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(0, 90)
@@ -1478,6 +1525,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "Open"
+font_size = 36.0
 
 [node name="HelpButton" parent="Header" instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(0, 90)
@@ -1488,6 +1536,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "Help"
+font_size = 36.0
 
 [node name="ExitButton" parent="Header" instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(0, 90)
@@ -1498,6 +1547,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "Exit"
+font_size = 36.0
 
 [node name="ExitButton" parent="." instance=ExtResource("209_oe7sq")]
 custom_minimum_size = Vector2(0, 90)
@@ -1514,6 +1564,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "Open Folder"
+font_size = 36.0
 
 [node name="FooterButtons" type="Control" parent="."]
 layout_mode = 1
@@ -1544,6 +1595,7 @@ grow_vertical = 0
 texture_normal = ExtResource("217_m5o6s")
 texture_pressed = ExtResource("218_5bu4m")
 texture_disabled = ExtResource("219_gfd6u")
+font_size = 36.0
 
 [node name="PrevMenuButton" parent="FooterButtons" instance=ExtResource("209_oe7sq")]
 layout_mode = 1
@@ -1560,6 +1612,7 @@ disabled = true
 texture_normal = ExtResource("217_m5o6s")
 texture_pressed = ExtResource("218_5bu4m")
 texture_disabled = ExtResource("219_gfd6u")
+font_size = 36.0
 
 [node name="RotationSlider" type="HSlider" parent="FooterButtons"]
 layout_mode = 1
@@ -1626,6 +1679,7 @@ texture_hover = ExtResource("212_v3j0h")
 texture_disabled = null
 ignore_texture_size = false
 text = "Cancel"
+font_size = 36.0
 
 [node name="DeleteButton" parent="Opener" instance=ExtResource("209_oe7sq")]
 visible = false
@@ -1636,6 +1690,7 @@ texture_normal = ExtResource("214_rnf4u")
 texture_pressed = ExtResource("215_0qghc")
 texture_hover = ExtResource("216_xl1q7")
 texture_disabled = null
+font_size = 36.0
 
 [node name="HelpMenu" type="Panel" parent="."]
 visible = false
@@ -2045,6 +2100,7 @@ grow_vertical = 0
 texture_normal = ExtResource("217_m5o6s")
 texture_pressed = ExtResource("218_5bu4m")
 texture_disabled = ExtResource("219_gfd6u")
+font_size = 36.0
 
 [node name="PrevMenuButton" parent="HelpMenu/Panel" instance=ExtResource("209_oe7sq")]
 layout_mode = 1
@@ -2062,6 +2118,7 @@ disabled = true
 texture_normal = ExtResource("217_m5o6s")
 texture_pressed = ExtResource("218_5bu4m")
 texture_disabled = ExtResource("219_gfd6u")
+font_size = 36.0
 
 [node name="Closebutton" parent="HelpMenu/Panel" instance=ExtResource("209_oe7sq")]
 layout_mode = 1
@@ -2075,6 +2132,7 @@ grow_horizontal = 0
 texture_normal = ExtResource("221_ojop1")
 texture_pressed = ExtResource("222_u7wiv")
 texture_disabled = ExtResource("219_gfd6u")
+font_size = 36.0
 
 [connection signal="s_option_changed" from="Menus/BodySelector/OptionContainer/BodyScroller" to="." method="on_body_type_changed"]
 [connection signal="s_option_changed" from="Menus/BodySelector/OptionContainer/BodyScroller" to="." method="reset_attacks"]
@@ -2112,12 +2170,12 @@ texture_disabled = ExtResource("219_gfd6u")
 [connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NameSelectorPlural/LineEdit" to="." method="set_plural_name"]
 [connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NamePrefix/LineEdit" to="." method="set_name_prefix"]
 [connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NameSuffix/LineEdit" to="." method="set_name_suffix"]
-[connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NameTitle/LineEdit" to="." method="set_name_title"]
 [connection signal="value_changed" from="Menus/AtrributeSelectors/VBoxContainer/LevelMinimum/HSlider" to="." method="set_minimum_level"]
 [connection signal="value_changed" from="Menus/AtrributeSelectors/VBoxContainer/LevelMaximum/HSlider" to="." method="set_maximum_level"]
 [connection signal="toggled" from="Menus/AtrributeSelectors/VBoxContainer/ProxyToggle/CheckBox" to="." method="proxy_toggled"]
 [connection signal="value_changed" from="Menus/AtrributeSelectors/VBoxContainer/AbilityCountSlider/HSlider" to="." method="set_ability_count"]
-[connection signal="value_changed" from="Menus/AttackPicker/VBoxContainer/LevelMinimum2/HSlider" to="." method="set_hp_mod"]
+[connection signal="text_changed" from="Menus/AtrributeSelectorsPart2/VBoxContainer/NametagSuffix/LineEdit" to="." method="set_custom_suffix"]
+[connection signal="value_changed" from="Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/HSlider" to="." method="set_hp_mod"]
 [connection signal="pressed" from="Menus/BattlePhraseEditor/Panel/AddButton" to="." method="add_battle_phrase"]
 [connection signal="pressed" from="Header/NewButton" to="." method="new_pressed"]
 [connection signal="pressed" from="Header/SaveButton" to="." method="save_file"]

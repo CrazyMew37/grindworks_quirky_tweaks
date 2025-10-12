@@ -19,11 +19,8 @@ func _ready() -> void:
 	Globals.import_custom_cogs()
 	
 	# Duplicate the Cog's DNA so we aren't editing anything important wink wink
-	cog.set_dna(safe_cogs.cogs[RandomService.randi_channel('true_random') % safe_cogs.cogs.size()].duplicate())
-	cog.set_animation("neutral")
-	cog.dna.external_assets['head_model'] = cog.dna.head.resource_path
-	cog.dna.head = null
-	
+	randomize_cog()
+
 	_prepare_menus()
 
 func _prepare_menus() -> void:
@@ -41,6 +38,12 @@ func _prepare_menus() -> void:
 	_ready_attacks()
 	_ready_phrases()
 
+func randomize_cog() -> void:
+	# Duplicate the Cog's DNA so we aren't editing anything important wink wink
+	cog.set_dna(safe_cogs.cogs.pick_random().duplicate(true))
+	cog.set_animation("neutral")
+	cog.dna.external_assets['head_model'] = cog.dna.head
+	cog.dna.head = ""
 
 #region TOP LEVEL MENU
 @onready var next_menu_button : GeneralButton = $FooterButtons/NextMenuButton
@@ -113,6 +116,7 @@ func open_custom_cogs_folder() -> void:
 	OS.shell_open(ProjectSettings.globalize_path(COG_SAVE_PATH))
 
 func new_pressed() -> void:
+	randomize_cog()
 	cog.randomize_cog()
 	opened_file = ""
 	_prepare_menus()
@@ -135,7 +139,7 @@ func close_open_menu() -> void:
 
 func open_file(file : UIFile) -> void:
 	close_open_menu()
-	cog.set_dna(Globals.loaded_custom_cogs[file.file_path].duplicate())
+	cog.set_dna(Globals.loaded_custom_cogs[file.file_path].duplicate(true))
 	_prepare_menus()
 	opened_file = file.file_path
 
@@ -238,7 +242,7 @@ func append_cog_head(head : PackedScene) -> void:
 	head_models.append(new_file)
 
 func set_head(file : UIModelFile) -> void:
-	cog.dna.head = null
+	cog.dna.head = ""
 	cog.dna.external_assets['head_model'] = file.file_path
 	_refresh_cog()
 
@@ -389,17 +393,17 @@ func gather_leg_textures() -> void:
 	leg_tex_directory.show_custom_file_list(leg_textures)
 
 func set_blazer_texture(file : UIFile) -> void:
-	cog.dna.custom_blazer_tex = null
+	cog.dna.custom_blazer_tex = ""
 	cog.dna.external_assets['custom_blazer_tex'] = file.file_path
 	_refresh_cog()
 
 func set_sleeve_texture(file : UIFile) -> void:
-	cog.dna.custom_arm_tex = null
+	cog.dna.custom_arm_tex = ""
 	cog.dna.external_assets['custom_arm_tex'] = file.file_path
 	_refresh_cog()
 
 func set_leg_texture(file : UIFile) -> void:
-	cog.dna.custom_leg_tex = null
+	cog.dna.custom_leg_tex = ""
 	cog.dna.external_assets['custom_leg_tex'] = file.file_path
 	_refresh_cog()
 	
@@ -537,9 +541,9 @@ func suit_changed(index : int) -> void:
 				cog.dna.external_assets.erase(value)
 			cog.dna.set(value, null)
 	else:
-		cog.dna.custom_arm_tex = suit['custom_arm_tex']
-		cog.dna.custom_blazer_tex = suit['custom_blazer_tex']
-		cog.dna.custom_leg_tex = suit['custom_leg_tex']
+		cog.dna.custom_arm_tex = suit['custom_arm_tex'].resource_path
+		cog.dna.custom_blazer_tex = suit['custom_blazer_tex'].resource_path
+		cog.dna.custom_leg_tex = suit['custom_leg_tex'].resource_path
 	_refresh_cog()
 
 #endregion
@@ -567,7 +571,6 @@ func set_hand_color(color : Color) -> void:
 @onready var name_plural_editor : LineEdit = $Menus/AtrributeSelectors/VBoxContainer/NameSelectorPlural/LineEdit
 @onready var name_prefix_editor : LineEdit = $Menus/AtrributeSelectors/VBoxContainer/NamePrefix/LineEdit
 @onready var name_suffix_editor : LineEdit = $Menus/AtrributeSelectors/VBoxContainer/NameSuffix/LineEdit
-@onready var name_title_editor : LineEdit = $Menus/AtrributeSelectors/VBoxContainer/NameTitle/LineEdit
 @onready var level_min_slider : HSlider = $Menus/AtrributeSelectors/VBoxContainer/LevelMinimum/HSlider
 @onready var level_min_label : Label = $Menus/AtrributeSelectors/VBoxContainer/LevelMinimum/Label
 @onready var level_max_slider : HSlider = $Menus/AtrributeSelectors/VBoxContainer/LevelMaximum/HSlider
@@ -576,6 +579,9 @@ func set_hand_color(color : Color) -> void:
 @onready var ability_count_slider : HSlider = $Menus/AtrributeSelectors/VBoxContainer/AbilityCountSlider/HSlider
 @onready var ability_count_label : Label = $Menus/AtrributeSelectors/VBoxContainer/AbilityCountSlider/Label
 @onready var ability_count_element : VBoxContainer = $Menus/AtrributeSelectors/VBoxContainer/AbilityCountSlider
+@onready var suffix_editor: LineEdit = $Menus/AtrributeSelectorsPart2/VBoxContainer/NametagSuffix/LineEdit
+@onready var health_mod_slider : HSlider = $Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/HSlider
+@onready var health_mod_label : Label = $Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/Label
 
 func _ready_attribute() -> void:
 	name_editor.set_text(cog.dna.cog_name)
@@ -583,12 +589,15 @@ func _ready_attribute() -> void:
 	level_min_slider.set_value(cog.dna.level_low)
 	name_prefix_editor.set_text(cog.dna.name_prefix)
 	name_suffix_editor.set_text(cog.dna.name_suffix)
-	name_title_editor.set_text(cog.dna.custom_nametag_suffix)
 	refresh_plural_name()
 	proxy_button.set_pressed(cog.dna.is_mod_cog)
 	if cog.dna.is_mod_cog:
 		ability_count_element.show()
 	set_ability_count(get_ability_count(cog.dna))
+	if not SaveFileService.progress_file.proxies_unlocked:
+		proxy_button.get_parent().hide()
+	suffix_editor.set_text(cog.dna.custom_nametag_suffix)
+	health_mod_slider.set_value(cog.dna.health_mod)
 
 func set_cog_name(new_name : String) -> void:
 	cog.dna.cog_name = new_name
@@ -610,10 +619,9 @@ func set_name_prefix(new_prefix : String) -> void:
 func set_name_suffix(new_suffix : String) -> void:
 	cog.dna.name_suffix = new_suffix
 	
-func set_name_title(new_title : String) -> void:
-	cog.dna.custom_nametag_suffix = new_title
+func set_custom_suffix(new_suffix: String) -> void:
+	cog.dna.custom_nametag_suffix = new_suffix
 	_refresh_cog()
-	refresh_plural_name()
 
 func set_minimum_level(value : float) -> void:
 	level_min_label.set_text("Minimum Level: %d" % value)
@@ -631,30 +639,32 @@ func set_maximum_level(value : float) -> void:
 	if cog.level > cog.dna.level_high:
 		_refresh_cog()
 
-const PROXY_EFFECT := preload('res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres')
+const PROXY_EFFECT := 'res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres'
 func proxy_toggled(yes : bool) -> void:
 	if yes:
 		cog.dna.is_mod_cog = true
 		set_ability_count(1)
 	else:
-		cog.dna.is_mod_cog = false
-		while cog.dna.status_effects.has(PROXY_EFFECT):
-			cog.dna.status_effects.erase(PROXY_EFFECT)
+		var effect_index := cog.dna.baked_status_effects.find(PROXY_EFFECT)
+		while effect_index != -1:
+			cog.dna.baked_status_effects.remove_at(effect_index)
 	_refresh_cog()
 	ability_count_element.visible = yes
 
 func set_ability_count(new_count : float) -> void:
 	while get_ability_count(cog.dna) < new_count:
-		cog.dna.status_effects.append(PROXY_EFFECT)
+		cog.dna.baked_status_effects.append(PROXY_EFFECT)
 	while get_ability_count(cog.dna) > new_count:
-		cog.dna.status_effects.erase(PROXY_EFFECT)
+		cog.dna.baked_status_effects.remove_at(
+			cog.dna.baked_status_effects.find(PROXY_EFFECT)
+		)
 	ability_count_label.set_text("Ability Count: %d" % roundi(new_count))
 	ability_count_slider.set_value_no_signal(new_count)
 	_refresh_cog()
  
 func get_ability_count(dna : CogDNA) -> int:
 	var count := 0
-	for effect in dna.status_effects:
+	for effect in dna.baked_status_effects:
 		if effect == PROXY_EFFECT:
 			count += 1
 	return count
@@ -669,8 +679,6 @@ func get_ability_count(dna : CogDNA) -> int:
 @onready var attack_container_c : VBoxContainer = $Menus/AttackPicker/MenuC/ScrollContainer/AttackContainer
 @onready var attack_master_list := [suit_a_attacks, suit_b_attacks, suit_c_attacks]
 @onready var all_attack_containers := [attack_container_a, attack_container_b, attack_container_c]
-@onready var health_mod_slider : HSlider = $Menus/AttackPicker/VBoxContainer/LevelMinimum2/HSlider
-@onready var health_mod_label : Label = $Menus/AttackPicker/VBoxContainer/LevelMinimum2/Label
 
 var attack_menu_current : VBoxContainer:
 	get:
@@ -680,7 +688,6 @@ var attack_menu_current : VBoxContainer:
 			_: return attack_container_c
 
 func _ready_attacks() -> void:
-	health_mod_slider.set_value(cog.dna.health_mod)
 	populate_attack_menus()
 	refresh_attacks()
 	show_correct_menu()
@@ -800,6 +807,18 @@ func files_loading() -> void:
 func files_finished_loading() -> void:
 	mouse_blocker.hide()
 
+@onready var gui_group: Array[Node] = [
+	$Menus, $Header, $ExitButton, $FooterButtons,
+]
+var show_ui := true
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed('hide_gui'):
+		show_ui = not show_ui
+		for node in gui_group: 
+			node.set_visible(show_ui)
 
 func set_health_mod(value: float) -> void:
+	pass # Replace with function body.
+
+func _on_line_edit_text_changed(new_text: String) -> void:
 	pass # Replace with function body.
