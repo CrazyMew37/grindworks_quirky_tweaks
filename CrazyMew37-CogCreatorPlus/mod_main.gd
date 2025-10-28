@@ -39,9 +39,11 @@ func install_script_extensions() -> void:
 
 
 
+
 func install_script_hook_files() -> void:
 	extensions_dir_path = mod_dir_path.path_join("extensions")
 	ModLoaderMod.install_script_hooks("res://scenes/title_screen/extras_menu.gd", extensions_dir_path.path_join("scenes/title_screen/extras_menu.hooks.gd"))
+	ModLoaderMod.install_script_hooks("res://objects/cog/cog_dna.gd", extensions_dir_path.path_join("objects/cog/cog_dna.hooks.gd"))
 
 
 

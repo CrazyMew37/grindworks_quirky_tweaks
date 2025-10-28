@@ -582,6 +582,7 @@ func set_hand_color(color : Color) -> void:
 @onready var suffix_editor: LineEdit = $Menus/AtrributeSelectorsPart2/VBoxContainer/NametagSuffix/LineEdit
 @onready var health_mod_slider : HSlider = $Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/HSlider
 @onready var health_mod_label : Label = $Menus/AtrributeSelectorsPart2/VBoxContainer/HealthModifier/Label
+@onready var speak_button : CheckBox = $Menus/AtrributeSelectorsPart2/VBoxContainer/SpeakToggle/CheckBox
 
 func _ready_attribute() -> void:
 	name_editor.set_text(cog.dna.cog_name)
@@ -598,6 +599,7 @@ func _ready_attribute() -> void:
 		proxy_button.get_parent().hide()
 	suffix_editor.set_text(cog.dna.custom_nametag_suffix)
 	health_mod_slider.set_value(cog.dna.health_mod)
+	speak_button.set_pressed(cog.dna.can_speak)
 
 func set_cog_name(new_name : String) -> void:
 	cog.dna.cog_name = new_name
@@ -668,6 +670,13 @@ func get_ability_count(dna : CogDNA) -> int:
 		if effect == PROXY_EFFECT:
 			count += 1
 	return count
+	
+func speak_toggled(yes : bool) -> void:
+	if yes:
+		cog.dna.can_speak = true
+	else:
+		cog.dna.can_speak = false
+	_refresh_cog()
 
 #endregion
 
