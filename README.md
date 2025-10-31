@@ -19,6 +19,9 @@ Hate how the Yellow Moles keep launching you and bouncing you around like a tenn
 ### Cog Creator Plus
 This mod adds some extra utilities and uses for the Cog Creator, adding stuff like head positions, extended scales, an overhauled suit menu, and more. All cogs made with this mod should be vanilla compatible.
 
+### Kevin Macleod Soundpack
+This mod adds Kevin Macleod's generic copyright-free music to the game. Why? Because why not? All music in this mod is by Kevin MacLeod, and they're all under the CC-BY 3.0 License.
+
 ## DISCONTINUED MODS
 
 ### Nerfed Fairway Fiend (Latest Version is 1.1.3)
