@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0cqdpuv8n8cq"
+path="res://.godot/imported/Darkest Child.mp3-238a6f94c5be0c370ba572c9620bee06.mp3str"
+
+[deps]
+
+source_file="res://mods-unpacked/CrazyMew37-KevinMacLeodSoundpack/music/Darkest Child.mp3"
+dest_files=["res://.godot/imported/Darkest Child.mp3-238a6f94c5be0c370ba572c9620bee06.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
