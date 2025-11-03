@@ -642,41 +642,36 @@ func set_maximum_level(value : float) -> void:
 		_refresh_cog()
 
 const PROXY_EFFECT := 'res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres'
-func proxy_toggled(yes : bool) -> void:
+func proxy_toggled(yes: bool) -> void:
 	if yes:
 		cog.dna.is_mod_cog = true
 		set_ability_count(1)
 	else:
-		var effect_index := cog.dna.baked_status_effects.find(PROXY_EFFECT)
-		while effect_index != -1:
-			cog.dna.baked_status_effects.remove_at(effect_index)
+		cog.dna.is_mod_cog = false
+		if cog.dna.external_assets.has('status_effects'):
+			while PROXY_EFFECT in cog.dna.external_assets['status_effects']:
+				cog.dna.external_assets['status_effects'].erase(PROXY_EFFECT)
 	_refresh_cog()
 	ability_count_element.visible = yes
 
 func set_ability_count(new_count : float) -> void:
+	if not cog.dna.external_assets.has('status_effects'):
+		cog.dna.external_assets['status_effects'] = []
 	while get_ability_count(cog.dna) < new_count:
-		cog.dna.baked_status_effects.append(PROXY_EFFECT)
+		cog.dna.external_assets['status_effects'].append(PROXY_EFFECT)
 	while get_ability_count(cog.dna) > new_count:
-		cog.dna.baked_status_effects.remove_at(
-			cog.dna.baked_status_effects.find(PROXY_EFFECT)
-		)
+		cog.dna.external_assets['status_effects'].erase(PROXY_EFFECT)
 	ability_count_label.set_text("Ability Count: %d" % roundi(new_count))
 	ability_count_slider.set_value_no_signal(new_count)
 	_refresh_cog()
  
 func get_ability_count(dna : CogDNA) -> int:
 	var count := 0
-	for effect in dna.baked_status_effects:
-		if effect == PROXY_EFFECT:
-			count += 1
+	if dna.external_assets.has('status_effects'):
+		for effect in dna.external_assets['status_effects']:
+			if effect == PROXY_EFFECT:
+				count += 1
 	return count
-	
-func speak_toggled(yes : bool) -> void:
-	if yes:
-		cog.dna.can_speak = true
-	else:
-		cog.dna.can_speak = false
-	_refresh_cog()
 
 #endregion
 
