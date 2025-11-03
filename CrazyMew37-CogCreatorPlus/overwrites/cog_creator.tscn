@@ -1242,12 +1242,10 @@ step = 0.01
 value = 1.0
 
 [node name="Spacer2" type="Control" parent="Menus/AtrributeSelectorsPart2/VBoxContainer"]
-visible = false
 custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 
 [node name="SpeakToggle" type="HBoxContainer" parent="Menus/AtrributeSelectorsPart2/VBoxContainer"]
-visible = false
 layout_mode = 2
 alignment = 1
 
