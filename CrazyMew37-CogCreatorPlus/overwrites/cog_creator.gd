@@ -309,7 +309,7 @@ func reset_textures() -> void:
 
 #endregion
 
-## New Regio Baybeee -cm37
+## New Region Baybeee -cm37
 #region SUIT TEXTURE MODIFIERS
 @export var blazer_texture_files : Array[Texture2D]
 @export var sleeve_texture_files : Array[Texture2D]
@@ -673,6 +673,13 @@ func get_ability_count(dna : CogDNA) -> int:
 				count += 1
 	return count
 
+func speak_toggled(yes: bool) -> void:
+	if yes:
+		cog.dna.can_speak = true
+	else:
+		cog.dna.can_speak = false
+	_refresh_cog()
+
 #endregion
 
 #region ATTACK SELECTION
@@ -683,6 +690,7 @@ func get_ability_count(dna : CogDNA) -> int:
 @onready var attack_container_c : VBoxContainer = $Menus/AttackPicker/MenuC/ScrollContainer/AttackContainer
 @onready var attack_master_list := [suit_a_attacks, suit_b_attacks, suit_c_attacks]
 @onready var all_attack_containers := [attack_container_a, attack_container_b, attack_container_c]
+
 
 var attack_menu_current : VBoxContainer:
 	get:
@@ -739,7 +747,6 @@ func set_hp_mod(new_health_mod : float) -> void:
 func refresh_health_mod_label() -> void:
 	health_mod_label.set_text("Health Multiplier: %10.2f" % cog.dna.health_mod)
 	
-
 
 #endregion
 
