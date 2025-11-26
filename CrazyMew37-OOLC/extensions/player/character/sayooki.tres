@@ -46,8 +46,8 @@ bottoms = SubResource("Resource_ugrs1")
 [resource]
 script = ExtResource("10_678rq")
 character_name = "Sayooki"
-character_summary = "Dropless & Soundless
-Gag Order: Trap, Lure, Throw, Squirt
+character_summary = "Soundless, gags cap at Level 6
+Gag Order: Trap, Lure, Throw, Squirt, Drop
 Starts with Spinning Top
 Crit Multiplier is 135%
 Gains 5% Laff after every battle"
@@ -58,6 +58,7 @@ starting_laff = 30
 starting_items = Array[ExtResource("1_pa2dx")]([ExtResource("11_do7n8"), ExtResource("12_do7n8")])
 base_stats = SubResource("Resource_jj61k")
 starting_gags = Dictionary[String, int]({
+"Drop": 1,
 "Lure": 1,
 "Squirt": 1,
 "Throw": 1,
