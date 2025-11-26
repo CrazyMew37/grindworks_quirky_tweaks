@@ -22,6 +22,9 @@ This mod adds some extra utilities and uses for the Cog Creator, adding stuff li
 ### Kevin Macleod Soundpack
 This mod adds Kevin Macleod's generic copyright-free music to the game. Why? Because why not? All music in this mod is by Kevin MacLeod, and they're all under the CC-BY 3.0 License.
 
+### Ooki Ooki Literature Club!
+This mod adds five Toons based on the five main Doki Doki Literature Club characters, with a monkey theming.
+
 ## DISCONTINUED MODS
 
 ### Nerfed Fairway Fiend (Latest Version is 1.1.3)
