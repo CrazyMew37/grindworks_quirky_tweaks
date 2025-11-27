@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ci3ntyum1mlyy"]
 
-[ext_resource type="Script" uid="uid://cvdv71ioqw7ob" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/items/resources/passive/mc_setup.gd" id="1_q0c3g"]
+[ext_resource type="Script" uid="uid://c8j8dfwd5gr6r" path="res://mods-unpacked/CrazyMew37-OOLC/extensions/objects/items/resources/passive/natsuki_setup.gd" id="1_q0c3g"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_xbeof"]
 
 [resource]
