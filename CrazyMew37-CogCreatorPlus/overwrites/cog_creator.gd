@@ -32,6 +32,7 @@ func _prepare_menus() -> void:
 	_ready_blazer_tex()
 	_ready_sleeve_tex()
 	_ready_leg_tex()
+	_ready_emblem_tex()
 	_ready_head_modifiers()
 	_ready_colors()
 	_ready_attribute()
@@ -314,14 +315,17 @@ func reset_textures() -> void:
 @export var blazer_texture_files : Array[Texture2D]
 @export var sleeve_texture_files : Array[Texture2D]
 @export var leg_texture_files : Array[Texture2D]
+@export var emblem_texture_files : Array[Texture2D]
 
 @onready var blazer_tex_directory : DirectoryViewer = $Menus/SuitSelector/BlazerTexDirectory
 @onready var sleeve_tex_directory : DirectoryViewer = $Menus/SuitSelector/SleeveTexDirectory
 @onready var leg_tex_directory : DirectoryViewer = $Menus/SuitSelector/LegTexDirectory
+@onready var emblem_tex_directory : DirectoryViewer = $Menus/EmblemTextureSelector/EmblemTexDirectory
 
 var blazer_textures : Array[UIFile] = []
 var sleeve_textures : Array[UIFile] = []
 var leg_textures : Array[UIFile] = []
+var emblem_textures : Array[UIFile] = []
 
 func _ready_blazer_tex() -> void:
 	blazer_textures.clear()
@@ -334,13 +338,19 @@ func _ready_sleeve_tex() -> void:
 func _ready_leg_tex() -> void:
 	leg_textures.clear()
 	gather_leg_textures()
+	
+func _ready_emblem_tex() -> void:
+	emblem_textures.clear()
+	gather_emblem_textures()
 
 var custom_cog_blazer_directory := {}
 var custom_cog_sleeve_directory := {}
 var custom_cog_leg_directory := {}
+var custom_cog_emblem_directory := {}
 const BLAZER_SAVE_PATH := "user://save/custom_cogs/custom_blazers/"
 const SLEEVE_SAVE_PATH := "user://save/custom_cogs/custom_sleeves/"
 const LEG_SAVE_PATH := "user://save/custom_cogs/custom_legs/"
+const EMBLEM_SAVE_PATH := "user://save/custom_cogs/custom_emblems/"
 
 func _ready_import_cog_suit_textures() -> void:
 	for file in DirAccess.get_files_at(BLAZER_SAVE_PATH):
@@ -352,6 +362,9 @@ func _ready_import_cog_suit_textures() -> void:
 	for file in DirAccess.get_files_at(LEG_SAVE_PATH):
 		if file.get_extension() in Globals.ACCEPTED_TEXTURES:
 			custom_cog_leg_directory[LEG_SAVE_PATH + file] = ImageTexture.create_from_image(Image.load_from_file(LEG_SAVE_PATH + file))
+	for file in DirAccess.get_files_at(EMBLEM_SAVE_PATH):
+		if file.get_extension() in Globals.ACCEPTED_TEXTURES:
+			custom_cog_emblem_directory[EMBLEM_SAVE_PATH + file] = ImageTexture.create_from_image(Image.load_from_file(EMBLEM_SAVE_PATH + file))
 
 func gather_blazer_textures() -> void:
 	for tex : Texture2D in blazer_texture_files:
@@ -392,6 +405,19 @@ func gather_leg_textures() -> void:
 		leg_textures.append(file)
 	leg_tex_directory.show_custom_file_list(leg_textures)
 
+func gather_emblem_textures() -> void:
+	for tex : Texture2D in emblem_texture_files:
+		var file := UIFile.new()
+		file.file_path = tex.resource_path
+		file.icon = tex
+		emblem_textures.append(file)
+	for tex in custom_cog_emblem_directory:
+		var file := UIFile.new()
+		file.file_path = tex
+		file.icon = custom_cog_emblem_directory[tex]
+		emblem_textures.append(file)
+	emblem_tex_directory.show_custom_file_list(emblem_textures)
+
 func set_blazer_texture(file : UIFile) -> void:
 	cog.dna.custom_blazer_tex = ""
 	cog.dna.external_assets['custom_blazer_tex'] = file.file_path
@@ -405,6 +431,11 @@ func set_sleeve_texture(file : UIFile) -> void:
 func set_leg_texture(file : UIFile) -> void:
 	cog.dna.custom_leg_tex = ""
 	cog.dna.external_assets['custom_leg_tex'] = file.file_path
+	_refresh_cog()
+	
+func set_emblem_texture(file : UIFile) -> void:
+	cog.dna.custom_emblem_tex = ""
+	cog.dna.external_assets['custom_emblem_tex'] = file.file_path
 	_refresh_cog()
 	
 func new_blazer_texture_loaded(texture : Variant, file_path : String) -> void:
@@ -437,6 +468,16 @@ func new_leg_texture_loaded(texture : Variant, file_path : String) -> void:
 	leg_tex_directory.show_custom_file_list(leg_textures)
 	Globals.custom_cog_tex_directory[file_path] = texture
 
+func new_emblem_texture_loaded(texture : Variant, file_path : String) -> void:
+	if not texture is Texture2D:
+		printerr("Loaded texture not in proper format!")
+	var new_file := UIFile.new()
+	new_file.icon = texture
+	new_file.file_path = file_path
+	emblem_textures.append(new_file)
+	emblem_tex_directory.show_custom_file_list(emblem_textures)
+	Globals.custom_cog_tex_directory[file_path] = texture
+
 func reset_blazer_textures() -> void:
 	var values_to_clear := ['custom_blazer_tex']
 	for value in values_to_clear:
@@ -455,6 +496,14 @@ func reset_sleeve_textures() -> void:
 	
 func reset_leg_textures() -> void:
 	var values_to_clear := ['custom_leg_tex']
+	for value in values_to_clear:
+		if cog.dna.external_assets.has(value):
+			cog.dna.external_assets.erase(value)
+		cog.dna.set(value, null)
+	_refresh_cog()
+
+func reset_emblem_textures() -> void:
+	var values_to_clear := ['custom_emblem_tex']
 	for value in values_to_clear:
 		if cog.dna.external_assets.has(value):
 			cog.dna.external_assets.erase(value)
@@ -832,4 +881,8 @@ func set_health_mod(value: float) -> void:
 	pass # Replace with function body.
 
 func _on_line_edit_text_changed(new_text: String) -> void:
+	pass # Replace with function body.
+
+
+func open_load_panel() -> void:
 	pass # Replace with function body.

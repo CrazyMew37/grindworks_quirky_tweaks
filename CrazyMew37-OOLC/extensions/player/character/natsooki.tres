@@ -49,8 +49,8 @@ bottoms = SubResource("Resource_ugrs1")
 [resource]
 script = ExtResource("10_bkfm2")
 character_name = "Natsooki"
-character_summary = "Lureless & Trapless
-Gag Order: Squirt, Drop, Sound, Throw
+character_summary = "Lureless, Dropless, & Trapless
+Gag Order: Throw, Squirt, Sound
 Starts with Accessory Trunk
 Gets an extra turn, +1 Gag Regen, +2 Gag Cap
 Getting attacked gains a 1-round +5% damage boost"
@@ -61,7 +61,6 @@ starting_laff = 30
 starting_items = Array[ExtResource("1_emrvi")]([ExtResource("11_vxwky"), ExtResource("12_duloe"), ExtResource("13_vxwky")])
 base_stats = SubResource("Resource_jj61k")
 starting_gags = Dictionary[String, int]({
-"Drop": 1,
 "Sound": 1,
 "Squirt": 1,
 "Throw": 1

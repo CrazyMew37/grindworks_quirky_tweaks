@@ -39,6 +39,9 @@ func install_script_extensions() -> void:
 
 func install_script_hook_files() -> void:
 	extensions_dir_path = mod_dir_path.path_join("extensions")
+	ModLoaderMod.install_script_hooks("res://objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_red_light.gd", extensions_dir_path.path_join("objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_red_light.hooks.gd"))
+	ModLoaderMod.install_script_hooks("res://objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_green_light.gd", extensions_dir_path.path_join("objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_green_light.hooks.gd"))
+
 
 
 func add_translations() -> void:

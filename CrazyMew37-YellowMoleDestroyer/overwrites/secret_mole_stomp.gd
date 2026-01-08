@@ -10,6 +10,8 @@ const WAIT_TIME := Vector2(0.25,1.0)
 var MOLE_SCENE := load('res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/mole_hole_alt.tscn')
 const UI_SCENE := preload('res://objects/interactables/mole_stomp/mole_display.tscn')
 const MG_LOSE = preload("res://audio/sfx/misc/MG_lose.ogg")
+const INSTRUCTION_TEXT := "MOLE STOMP!\nStomp the red moles!"
+var LABEL: PackedScene
 
 enum GameMode { NORMAL, ENDLESS, MANAGED }
 
@@ -28,6 +30,7 @@ enum GameMode { NORMAL, ENDLESS, MANAGED }
 @export var launch_cam: Camera3D
 @export var hole_separation: float = 3.0
 @export var normal_mole_cog_boost_time: float = 0.0
+@export var want_instructions := true
 
 ## Locals
 var grid := []
@@ -42,6 +45,11 @@ var damage: int
 ## Variables only for the "managed" mode
 var managed_want_red_mole := false
 
+func _init():
+	if Engine.is_editor_hint(): return
+	GameLoader.queue_into(GameLoader.Phase.GAMEPLAY, self, {
+		'LABEL': 'res://objects/interactables/lawbot_puzzles/puzzle_label.tscn',
+	})
 
 func _ready() -> void:
 	fill_grid()
@@ -70,6 +78,8 @@ func on_body_entered(body: Node3D) -> void:
 func start_game() -> void:
 	active = true
 	reset_timer()
+	if want_instructions:
+		show_instructions()
 
 	if game_mode == GameMode.NORMAL:
 		mole_ui = UI_SCENE.instantiate()
@@ -122,6 +132,11 @@ func update_ui() -> void:
 func get_random_mole():
 	var row: Array = grid[RNG.channel(RNG.ChannelMoles).randi() % grid.size()]
 	return row[RNG.channel(RNG.ChannelMoles).randi() % row.size()]
+
+func show_instructions() -> void:
+	var label: Control = LABEL.instantiate()
+	add_child(label)
+	label.set_text(INSTRUCTION_TEXT)
 
 func win_game() -> void:
 	if game_mode == GameMode.ENDLESS:

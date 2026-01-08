@@ -47,8 +47,8 @@ bottoms = SubResource("Resource_ugrs1")
 [resource]
 script = ExtResource("10_1bvs7")
 character_name = "Yooki"
-character_summary = "Throwless & Soundless
-Gag Order: Squirt, Drop, Trap, Lure
+character_summary = "Throwless, Squirtless, & Soundless
+Gag Order: Drop, Trap, Lure
 Heals from defeated cogs to compensate
 Starts with Book of Laws
 Aftershock and Dollar Bill lures last an extra round"
@@ -61,7 +61,6 @@ base_stats = SubResource("Resource_jj61k")
 starting_gags = Dictionary[String, int]({
 "Drop": 1,
 "Lure": 1,
-"Squirt": 1,
 "Trap": 1
 })
 additional_stats = Dictionary[String, Variant]({

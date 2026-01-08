@@ -1,4 +1,4 @@
-[gd_scene load_steps=249 format=3 uid="uid://dn275bpqwi5qf"]
+[gd_scene load_steps=262 format=3 uid="uid://dn275bpqwi5qf"]
 
 [ext_resource type="Script" uid="uid://bkkf0vc8o0kx7" path="res://mods-unpacked/CrazyMew37-CogCreatorPlus/overwrites/cog_creator.gd" id="1_hil5c"]
 [ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="2_2gdhj"]
@@ -218,20 +218,33 @@
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="209_oe7sq"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="210_s2eh6"]
 [ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="211_m4hjc"]
+[ext_resource type="Texture2D" uid="uid://bnvln6hkbsr3d" path="res://models/cogs/misc/hp_light/sell.png" id="212_o7oq4"]
 [ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="212_v3j0h"]
 [ext_resource type="Texture2D" uid="uid://drat7du217eg2" path="res://models/cogs/textures/sell_legacy/sales_leg.png" id="212_y1ub6"]
 [ext_resource type="Texture2D" uid="uid://6jo5d4qtcd44" path="res://ui_assets/general/panel.png" id="213_lehf2"]
+[ext_resource type="Texture2D" uid="uid://d37hnib3h7pup" path="res://models/cogs/misc/hp_light/cash.png" id="213_ucq8c"]
+[ext_resource type="Texture2D" uid="uid://dpn4um17s6p73" path="res://models/cogs/misc/hp_light/law.png" id="214_81k1f"]
 [ext_resource type="Texture2D" uid="uid://dsd1yne7txvya" path="res://models/cogs/textures/statue_blue/leg_1.png" id="214_hqfvb"]
 [ext_resource type="Texture2D" uid="uid://bl4jam52awobx" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonUp.png" id="214_rnf4u"]
 [ext_resource type="Texture2D" uid="uid://cijunm56f5hq2" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonDown.png" id="215_0qghc"]
+[ext_resource type="Texture2D" uid="uid://cjynqnh16rd0p" path="res://models/cogs/misc/hp_light/boss.png" id="215_j8npl"]
 [ext_resource type="Texture2D" uid="uid://c2h3c1ya6tw30" path="res://models/cogs/textures/statue_gray/statue_leg.png" id="215_wuxm8"]
+[ext_resource type="Texture2D" uid="uid://btku14fh0vw7p" path="res://models/cogs/misc/hp_light/cog_light.png" id="216_gq4ya"]
 [ext_resource type="Texture2D" uid="uid://ctnar4np8tsb3" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonRollover.png" id="216_xl1q7"]
 [ext_resource type="Texture2D" uid="uid://bfpjolatqbe1" path="res://ui_assets/general/tt_t_gui_mat_nextUp.png" id="217_m5o6s"]
+[ext_resource type="Texture2D" uid="uid://bhaprym64jt7l" path="res://models/goon/goon_1.png" id="217_vhyp1"]
 [ext_resource type="Texture2D" uid="uid://h860bhtvuq18" path="res://ui_assets/general/tt_t_gui_mat_nextDown.png" id="218_5bu4m"]
+[ext_resource type="Texture2D" uid="uid://l0xxnkiegwdc" path="res://ui_assets/player_ui/laff_meter/bear.png" id="218_gwgr6"]
+[ext_resource type="Texture2D" uid="uid://dg2s02clx6j6m" path="res://ui_assets/player_ui/laff_meter/cat.png" id="219_13npo"]
 [ext_resource type="Texture2D" uid="uid://doudfntbyce4m" path="res://ui_assets/general/tt_t_gui_mat_nextDisabled.png" id="219_gfd6u"]
 [ext_resource type="Texture2D" uid="uid://bf47xjfxdkxds" path="res://ui_assets/misc/mod_example.png" id="220_6wxbi"]
+[ext_resource type="Texture2D" uid="uid://dy5ow0hhwlmlw" path="res://ui_assets/player_ui/laff_meter/dog.png" id="220_tt5r1"]
 [ext_resource type="Texture2D" uid="uid://ddlydc15tuxe3" path="res://ui_assets/general/tt_t_gui_mat_closeUp.png" id="221_ojop1"]
+[ext_resource type="Texture2D" uid="uid://bopjtolyr7d6e" path="res://ui_assets/player_ui/laff_meter/duck.png" id="221_sfhw4"]
+[ext_resource type="Texture2D" uid="uid://bk4lbiry8mgkh" path="res://ui_assets/player_ui/laff_meter/horse.png" id="222_2mvd2"]
 [ext_resource type="Texture2D" uid="uid://dkuel6g6u2cat" path="res://ui_assets/general/tt_t_gui_mat_closeDown.png" id="222_u7wiv"]
+[ext_resource type="Texture2D" uid="uid://b5ym5f5nst0ix" path="res://ui_assets/player_ui/laff_meter/monkey.png" id="223_1n0ec"]
+[ext_resource type="Texture2D" uid="uid://d3ytcmjqwvkc7" path="res://ui_assets/player_ui/laff_meter/mouse.png" id="224_nlfrt"]
 
 [sub_resource type="Resource" id="Resource_neob3"]
 script = ExtResource("31_3tp1m")
@@ -350,6 +363,7 @@ head_texture_files = Array[Texture2D]([ExtResource("101_umv2m"), ExtResource("10
 blazer_texture_files = Array[Texture2D]([ExtResource("186_npo2t"), ExtResource("180_2mp1q"), ExtResource("189_1ki5l"), ExtResource("183_4lrjk"), ExtResource("194_pwcys"), ExtResource("177_1wpoh"), ExtResource("197_rrgpc"), ExtResource("191_jmsvh"), ExtResource("200_xpfdn"), ExtResource("191_frv6j"), ExtResource("192_6qptg"), ExtResource("193_dcm4t")])
 sleeve_texture_files = Array[Texture2D]([ExtResource("185_8nh8p"), ExtResource("179_d6ptp"), ExtResource("188_ucsjk"), ExtResource("182_0m4gl"), ExtResource("193_q4md2"), ExtResource("176_tj510"), ExtResource("196_ykibo"), ExtResource("201_y1ub6"), ExtResource("190_bbn4o"), ExtResource("203_hqfvb"), ExtResource("204_wuxm8"), ExtResource("199_4hpf1")])
 leg_texture_files = Array[Texture2D]([ExtResource("187_57dvm"), ExtResource("181_nkh30"), ExtResource("188_ucsjk"), ExtResource("184_gsx4t"), ExtResource("195_kldqf"), ExtResource("178_ypwd7"), ExtResource("198_ajjie"), ExtResource("212_y1ub6"), ExtResource("192_0u74k"), ExtResource("214_hqfvb"), ExtResource("215_wuxm8"), ExtResource("201_wr314")])
+emblem_texture_files = Array[Texture2D]([ExtResource("212_o7oq4"), ExtResource("213_ucq8c"), ExtResource("214_81k1f"), ExtResource("215_j8npl"), ExtResource("216_gq4ya"), ExtResource("217_vhyp1"), ExtResource("218_gwgr6"), ExtResource("219_13npo"), ExtResource("220_tt5r1"), ExtResource("221_sfhw4"), ExtResource("222_2mvd2"), ExtResource("223_1n0ec"), ExtResource("224_nlfrt"), null, null])
 suits = Array[Dictionary]([{
 "custom_arm_tex": null,
 "custom_blazer_tex": null,
@@ -996,6 +1010,48 @@ font_size = 16.0
 text = "Load
 Custom"
 label_settings = SubResource("LabelSettings_bsylr")
+
+[node name="EmblemTextureSelector" type="Control" parent="Menus"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EmblemTexDirectory" parent="Menus/EmblemTextureSelector" instance=ExtResource("208_wprsi")]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -528.0
+offset_right = 0.0
+grow_horizontal = 0
+save_dir = "user://save/custom_cogs/"
+allowed_types = Array[String](["png", "jpg"])
+
+[node name="WindowTitle" parent="Menus/EmblemTextureSelector/EmblemTexDirectory" index="0"]
+text = "Select an Emblem Texture:"
+
+[node name="OpenButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" index="0"]
+font_size = 20.0
+
+[node name="GeneralButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons" index="1" instance=ExtResource("209_oe7sq")]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+texture_normal = ExtResource("210_s2eh6")
+texture_pressed = ExtResource("211_m4hjc")
+texture_hover = ExtResource("212_v3j0h")
+texture_disabled = null
+text = "Use Default"
+font_size = 24.0
+
+[node name="Label" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons/GeneralButton" index="0"]
+text = "Use Default"
+label_settings = SubResource("LabelSettings_pw51w")
+
+[node name="CancelButton" parent="Menus/EmblemTextureSelector/EmblemTexDirectory/LoadPanel" index="1"]
+font_size = 20.0
 
 [node name="BodyColors" type="Control" parent="Menus"]
 visible = false
@@ -2173,6 +2229,9 @@ font_size = 36.0
 [connection signal="pressed" from="Menus/SuitSelector/LegTexDirectory/FooterButtons/OpenButton2" to="Menus/SuitSelector/BlazerTexDirectory" method="open_load_panel"]
 [connection signal="pressed" from="Menus/SuitSelector/LegTexDirectory/FooterButtons2/GeneralButton" to="." method="reset_leg_textures"]
 [connection signal="pressed" from="Menus/SuitSelector/LegTexDirectory/FooterButtons2/OpenButton" to="Menus/SuitSelector/LegTexDirectory" method="open_load_panel"]
+[connection signal="s_file_imported" from="Menus/EmblemTextureSelector/EmblemTexDirectory" to="." method="new_emblem_texture_loaded"]
+[connection signal="s_file_selected" from="Menus/EmblemTextureSelector/EmblemTexDirectory" to="." method="set_emblem_texture"]
+[connection signal="pressed" from="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons/GeneralButton" to="." method="reset_emblem_textures"]
 [connection signal="color_changed" from="Menus/BodyColors/OptionContainer/HeadColor/ColorPickerButton" to="." method="set_head_color"]
 [connection signal="color_changed" from="Menus/BodyColors/OptionContainer/HandColor/ColorPickerButton" to="." method="set_hand_color"]
 [connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NameSelector/LineEdit" to="." method="set_cog_name"]
@@ -2222,4 +2281,8 @@ font_size = 36.0
 [editable path="Menus/SuitSelector/LegTexDirectory/LoadPanel/CancelButton"]
 [editable path="Menus/SuitSelector/LegTexDirectory/FooterButtons2/GeneralButton"]
 [editable path="Menus/SuitSelector/LegTexDirectory/FooterButtons2/OpenButton"]
+[editable path="Menus/EmblemTextureSelector/EmblemTexDirectory"]
+[editable path="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons/OpenButton"]
+[editable path="Menus/EmblemTextureSelector/EmblemTexDirectory/FooterButtons/GeneralButton"]
+[editable path="Menus/EmblemTextureSelector/EmblemTexDirectory/LoadPanel/CancelButton"]
 [editable path="Menus/BattlePhraseEditor/Panel/AddButton"]

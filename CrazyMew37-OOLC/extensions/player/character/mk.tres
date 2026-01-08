@@ -16,9 +16,10 @@
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("2_8d2op")
-damage = 0.9
-defense = 1.05
-evasiveness = 1.1
+damage = 1.05
+defense = 1.1
+evasiveness = 0.95
+speed = 0.9
 
 [sub_resource type="Resource" id="Resource_ugrs1"]
 script = ExtResource("3_4f07d")
@@ -48,11 +49,10 @@ bottoms = SubResource("Resource_ugrs1")
 [resource]
 script = ExtResource("10_o4ffn")
 character_name = "MK"
-character_summary = "Trapless & Soundless
-Gag Order: Lure, Throw, Squirt, Drop
-Throw and Squirt get +5% Power
+character_summary = "Only has Throw & Squirt (Order: Squirt, Throw)
+Throw & Squirt get +15% Power
 Starts with Paint Bucket and Dilly Dial
-+1 Gag Cost, +1 Gag Point Regen"
++1 Gag Point Regen, -1 Gag Cost, +5 Gag Cap"
 character_blurb = "Is Sayooki's childhood friend and the newest member of the Literature Club. Enjoys anime, games, and cute girls."
 dna = SubResource("Resource_ax4gq")
 gag_loadout = ExtResource("9_4f07d")
@@ -60,11 +60,9 @@ starting_laff = 30
 starting_items = Array[ExtResource("1_mwr1i")]([ExtResource("11_di443"), ExtResource("12_8o1qv"), ExtResource("13_el3lt")])
 base_stats = SubResource("Resource_jj61k")
 starting_gags = Dictionary[String, int]({
-"Drop": 1,
-"Lure": 1,
 "Squirt": 1,
 "Throw": 1
 })
 additional_stats = Dictionary[String, Variant]({
-"luck": 0.95
+"luck": 1.0
 })
