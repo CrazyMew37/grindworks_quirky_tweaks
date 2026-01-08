@@ -1,4 +1,4 @@
-[gd_scene load_steps=262 format=3 uid="uid://dn275bpqwi5qf"]
+[gd_scene load_steps=254 format=3 uid="uid://dn275bpqwi5qf"]
 
 [ext_resource type="Script" uid="uid://bkkf0vc8o0kx7" path="res://mods-unpacked/CrazyMew37-CogCreatorPlus/overwrites/cog_creator.gd" id="1_hil5c"]
 [ext_resource type="Script" uid="uid://yc46vrmyfql1" path="res://objects/cog/cog_dna.gd" id="2_2gdhj"]
@@ -229,22 +229,14 @@
 [ext_resource type="Texture2D" uid="uid://cijunm56f5hq2" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonDown.png" id="215_0qghc"]
 [ext_resource type="Texture2D" uid="uid://cjynqnh16rd0p" path="res://models/cogs/misc/hp_light/boss.png" id="215_j8npl"]
 [ext_resource type="Texture2D" uid="uid://c2h3c1ya6tw30" path="res://models/cogs/textures/statue_gray/statue_leg.png" id="215_wuxm8"]
-[ext_resource type="Texture2D" uid="uid://btku14fh0vw7p" path="res://models/cogs/misc/hp_light/cog_light.png" id="216_gq4ya"]
 [ext_resource type="Texture2D" uid="uid://ctnar4np8tsb3" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonRollover.png" id="216_xl1q7"]
 [ext_resource type="Texture2D" uid="uid://bfpjolatqbe1" path="res://ui_assets/general/tt_t_gui_mat_nextUp.png" id="217_m5o6s"]
 [ext_resource type="Texture2D" uid="uid://bhaprym64jt7l" path="res://models/goon/goon_1.png" id="217_vhyp1"]
 [ext_resource type="Texture2D" uid="uid://h860bhtvuq18" path="res://ui_assets/general/tt_t_gui_mat_nextDown.png" id="218_5bu4m"]
-[ext_resource type="Texture2D" uid="uid://l0xxnkiegwdc" path="res://ui_assets/player_ui/laff_meter/bear.png" id="218_gwgr6"]
-[ext_resource type="Texture2D" uid="uid://dg2s02clx6j6m" path="res://ui_assets/player_ui/laff_meter/cat.png" id="219_13npo"]
 [ext_resource type="Texture2D" uid="uid://doudfntbyce4m" path="res://ui_assets/general/tt_t_gui_mat_nextDisabled.png" id="219_gfd6u"]
 [ext_resource type="Texture2D" uid="uid://bf47xjfxdkxds" path="res://ui_assets/misc/mod_example.png" id="220_6wxbi"]
-[ext_resource type="Texture2D" uid="uid://dy5ow0hhwlmlw" path="res://ui_assets/player_ui/laff_meter/dog.png" id="220_tt5r1"]
 [ext_resource type="Texture2D" uid="uid://ddlydc15tuxe3" path="res://ui_assets/general/tt_t_gui_mat_closeUp.png" id="221_ojop1"]
-[ext_resource type="Texture2D" uid="uid://bopjtolyr7d6e" path="res://ui_assets/player_ui/laff_meter/duck.png" id="221_sfhw4"]
-[ext_resource type="Texture2D" uid="uid://bk4lbiry8mgkh" path="res://ui_assets/player_ui/laff_meter/horse.png" id="222_2mvd2"]
 [ext_resource type="Texture2D" uid="uid://dkuel6g6u2cat" path="res://ui_assets/general/tt_t_gui_mat_closeDown.png" id="222_u7wiv"]
-[ext_resource type="Texture2D" uid="uid://b5ym5f5nst0ix" path="res://ui_assets/player_ui/laff_meter/monkey.png" id="223_1n0ec"]
-[ext_resource type="Texture2D" uid="uid://d3ytcmjqwvkc7" path="res://ui_assets/player_ui/laff_meter/mouse.png" id="224_nlfrt"]
 
 [sub_resource type="Resource" id="Resource_neob3"]
 script = ExtResource("31_3tp1m")
@@ -363,7 +355,7 @@ head_texture_files = Array[Texture2D]([ExtResource("101_umv2m"), ExtResource("10
 blazer_texture_files = Array[Texture2D]([ExtResource("186_npo2t"), ExtResource("180_2mp1q"), ExtResource("189_1ki5l"), ExtResource("183_4lrjk"), ExtResource("194_pwcys"), ExtResource("177_1wpoh"), ExtResource("197_rrgpc"), ExtResource("191_jmsvh"), ExtResource("200_xpfdn"), ExtResource("191_frv6j"), ExtResource("192_6qptg"), ExtResource("193_dcm4t")])
 sleeve_texture_files = Array[Texture2D]([ExtResource("185_8nh8p"), ExtResource("179_d6ptp"), ExtResource("188_ucsjk"), ExtResource("182_0m4gl"), ExtResource("193_q4md2"), ExtResource("176_tj510"), ExtResource("196_ykibo"), ExtResource("201_y1ub6"), ExtResource("190_bbn4o"), ExtResource("203_hqfvb"), ExtResource("204_wuxm8"), ExtResource("199_4hpf1")])
 leg_texture_files = Array[Texture2D]([ExtResource("187_57dvm"), ExtResource("181_nkh30"), ExtResource("188_ucsjk"), ExtResource("184_gsx4t"), ExtResource("195_kldqf"), ExtResource("178_ypwd7"), ExtResource("198_ajjie"), ExtResource("212_y1ub6"), ExtResource("192_0u74k"), ExtResource("214_hqfvb"), ExtResource("215_wuxm8"), ExtResource("201_wr314")])
-emblem_texture_files = Array[Texture2D]([ExtResource("212_o7oq4"), ExtResource("213_ucq8c"), ExtResource("214_81k1f"), ExtResource("215_j8npl"), ExtResource("216_gq4ya"), ExtResource("217_vhyp1"), ExtResource("218_gwgr6"), ExtResource("219_13npo"), ExtResource("220_tt5r1"), ExtResource("221_sfhw4"), ExtResource("222_2mvd2"), ExtResource("223_1n0ec"), ExtResource("224_nlfrt"), null, null])
+emblem_texture_files = Array[Texture2D]([ExtResource("212_o7oq4"), ExtResource("213_ucq8c"), ExtResource("214_81k1f"), ExtResource("215_j8npl"), ExtResource("217_vhyp1")])
 suits = Array[Dictionary]([{
 "custom_arm_tex": null,
 "custom_blazer_tex": null,
@@ -1012,6 +1004,7 @@ Custom"
 label_settings = SubResource("LabelSettings_bsylr")
 
 [node name="EmblemTextureSelector" type="Control" parent="Menus"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
