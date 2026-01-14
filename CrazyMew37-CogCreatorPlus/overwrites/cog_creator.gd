@@ -584,7 +584,7 @@ func refresh_head_z_pos_label() -> void:
 func suit_changed(index : int) -> void:
 	var suit := suits[index]
 	if suit['custom_arm_tex'] == null:
-		var values_to_clear := ['custom_arm_tex', 'custom_blazer_tex', 'custom_leg_tex']
+		var values_to_clear := ['custom_arm_tex', 'custom_blazer_tex', 'custom_leg_tex', 'custom_emblem_text']
 		for value in values_to_clear:
 			if cog.dna.external_assets.has(value):
 				cog.dna.external_assets.erase(value)
@@ -593,6 +593,7 @@ func suit_changed(index : int) -> void:
 		cog.dna.custom_arm_tex = suit['custom_arm_tex'].resource_path
 		cog.dna.custom_blazer_tex = suit['custom_blazer_tex'].resource_path
 		cog.dna.custom_leg_tex = suit['custom_leg_tex'].resource_path
+		cog.dna.custom_blazer_tex = suit['custom_blazer_tex'].resource_path
 	_refresh_cog()
 
 #endregion
