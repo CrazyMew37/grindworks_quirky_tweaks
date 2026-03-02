@@ -75,3 +75,5 @@ func _init():
 	overwrite_36.take_over_path("res://audio/music/FF_safezone.ogg")
 	var overwrite_37 = preload("res://mods-unpacked/CrazyMew37-KevinMacLeodSoundpack/music/Who Likes to Party.mp3")
 	overwrite_37.take_over_path("res://audio/music/LB_juryBG.ogg")
+	var overwrite_38 = preload("res://mods-unpacked/CrazyMew37-KevinMacLeodSoundpack/music/Gymnopedie No 1.ogg")
+	overwrite_38.take_over_path("res://audio/music/beta_hall_of_fame.ogg")
