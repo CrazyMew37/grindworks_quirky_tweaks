@@ -15,3 +15,7 @@ func _init():
 	overwrite_vertical_room.take_over_path("res://objects/modules/cgc/variants/cgc_fairway_vertical.tscn")
 	var overwrite_sand_moles = preload("res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/cgc_long_room_moles.tscn")
 	overwrite_sand_moles.take_over_path("res://objects/modules/cgc/variants/cgc_long_room_moles.tscn")
+	var overwrite_sand_mole_punish = preload("res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/sand_mole.tscn")
+	overwrite_sand_mole_punish.take_over_path("res://objects/obstacles/sandtrap/sand_trap_with_moles/sand_mole/sand_mole.tscn")
+	var overwrite_sandtrap = preload("res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/sand_trap_with_moles.tscn")
+	overwrite_sandtrap.take_over_path("res://mods-unpacked/CrazyMew37-YellowMoleDestroyer/overwrites/sand_trap_with_moles.tscn")
